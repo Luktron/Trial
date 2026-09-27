@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 5
+
+1) O que é a "barra de tarefas" no Windows?
+A) Um componente de hardware
+B) Uma área que exibe aplicativos abertos e permite acesso rápido a programas
+C) Um tipo de vírus
+D) Um protocolo de internet
+E) Um formato de arquivo
+GABARITO: B
+
+2) Qual das opções é um exemplo de navegador de internet (browser)?
+A) Microsoft Excel
+B) Google Chrome
+C) Adobe Reader
+D) Windows Explorer
+E) Notepad
+GABARITO: B
+
+3) O que significa "atualizar o sistema operacional"?
+A) Formatar o computador completamente
+B) Instalar as versões mais recentes de software e correções de segurança disponibilizadas pelo fabricante
+C) Trocar o hardware do computador
+D) Desinstalar todos os programas
+E) Reiniciar o computador sem salvar alterações
+GABARITO: B
+
+4) A função =HOJE() no Excel retorna:
+A) O valor total de uma coluna
+B) A data atual do sistema
+C) O nome do usuário logado
+D) A hora exata em segundos
+E) O número de linhas preenchidas
+GABARITO: B
+
+5) Para classificar (ordenar) os dados de uma coluna em ordem crescente no Excel, utiliza-se a opção:
+A) Dados > Classificar de A a Z
+B) Inserir > Tabela
+C) Layout > Organizar
+D) Revisão > Ordenar
+E) Exibir > Classificar
+GABARITO: A
+
+6) A função =ARRUMAR (TRIM, em inglês) no Excel serve para:
+A) Remover espaços em branco desnecessários de um texto
+B) Arredondar valores numéricos
+C) Converter texto em maiúsculas
+D) Somar valores de uma coluna
+E) Criar uma tabela dinâmica
+GABARITO: A
+
+7) O que é a "criptografia" de dados?
+A) Um processo de compactação de arquivos
+B) Uma técnica que transforma informações em um formato ilegível, protegendo-as de acessos não autorizados
+C) Um tipo de vírus
+D) Um protocolo de impressão
+E) Um método de backup incremental
+GABARITO: B
+
+8) Qual das opções representa uma prática recomendada ao utilizar redes Wi-Fi públicas?
+A) Acessar dados bancários livremente
+B) Evitar transações sensíveis e, se possível, usar uma VPN
+C) Compartilhar arquivos sem restrição
+D) Desativar o antivírus para navegar mais rápido
+E) Utilizar sempre a mesma senha em todos os sites
+GABARITO: B
+
+9) O termo "malware" refere-se a:
+A) Um hardware defeituoso
+B) Qualquer software malicioso projetado para causar danos ou acessos indevidos a um sistema
+C) Um tipo de backup automático
+D) Um protocolo de rede segura
+E) Uma ferramenta de produtividade
+GABARITO: B
+
+10) O que é a "memória cache" de um processador?
+A) Uma memória de armazenamento permanente de arquivos
+B) Uma memória de alta velocidade que armazena dados frequentemente usados, próxima ao processador
+C) Um tipo de disco rígido externo
+D) Um componente de rede
+E) Um dispositivo de entrada de dados
+GABARITO: B
+
+11) Qual das opções é um exemplo de dispositivo de saída?
+A) Mouse
+B) Teclado
+C) Microfone
+D) Monitor
+E) Scanner
+GABARITO: D
+
+12) O que é o "BIOS/UEFI" de um computador?
+A) Um aplicativo de edição de texto
+B) Um firmware responsável por inicializar o hardware antes de carregar o sistema operacional
+C) Um tipo de memória RAM
+D) Um protocolo de rede
+E) Um software antivírus
+GABARITO: B
+
+13) O que é uma rede WAN?
+A) Uma rede restrita a um único cômodo
+B) Uma rede de longa distância que interliga localidades geograficamente distantes
+C) Um tipo de vírus de rede
+D) Um protocolo de e-mail
+E) Um dispositivo de armazenamento
+GABARITO: B
+
+14) O que é largura de banda (bandwidth) em uma rede?
+A) A distância física entre dois dispositivos
+B) A capacidade máxima de transmissão de dados em um determinado período
+C) O número de dispositivos conectados
+D) O tipo de cabo utilizado
+E) A criptografia utilizada na rede
+GABARITO: B
+
+15) Qual das opções é considerada um exemplo de rede sem fio de curto alcance, usada para conectar periféricos?
+A) Fibra óptica
+B) Bluetooth
+C) Ethernet
+D) MPLS
+E) Frame Relay
+GABARITO: B
+
+16) Uma empresa possui um orçamento de R$ 12.000,00 para dividir igualmente entre 4 setores. Quanto cada setor receberá?
+A) R$ 2.000,00
+B) R$ 2.500,00
+C) R$ 3.000,00
+D) R$ 3.500,00
+E) R$ 4.000,00
+GABARITO: C
+
+17) Um técnico gasta 15 minutos para configurar cada computador. Quantos computadores ele consegue configurar em 3 horas?
+A) 10
+B) 12
+C) 14
+D) 16
+E) 18
+GABARITO: B
+
+18) Se 25% dos 200 computadores de uma empresa apresentaram falha, quantos computadores tiveram problema?
+A) 40
+B) 45
+C) 50
+D) 55
+E) 60
+GABARITO: C
+
+19) Assinale a alternativa em que o uso do "porque/por que/por quê/porquê" está correto:
+A) Ele não sabia por que estava atrasado.
+B) Ele chegou atrasado por que estava chovendo muito.
+C) Ninguém entendeu o por que da decisão.
+D) Ele perguntou o motivo, mas ninguém respondeu por que.
+E) Ela avisou que faltaria, por quê estava doente.
+GABARITO: A
+
+20) Na frase "Ainda que o sistema estivesse funcionando, os técnicos decidiram atualizar todos os softwares", a expressão "ainda que" estabelece uma relação de:
+A) Causa
+B) Concessão
+C) Condição
+D) Consequência
+E) Finalidade
+GABARITO: B

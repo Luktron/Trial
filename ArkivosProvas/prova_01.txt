@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 1
+
+1) Qual componente é responsável por executar instruções e realizar cálculos em um computador?
+A) Fonte de alimentação
+B) Processador (CPU)
+C) Gabinete
+D) Monitor
+E) Teclado
+GABARITO: B
+
+2) Qual sistema de arquivos é comumente utilizado em versões atuais do Windows?
+A) NTFS
+B) EXT4
+C) APFS
+D) HFS+
+E) XFS
+GABARITO: A
+
+3) Qual atalho do teclado normalmente copia um item selecionado no Windows?
+A) Ctrl+X
+B) Ctrl+Z
+C) Ctrl+C
+D) Ctrl+V
+E) Ctrl+S
+GABARITO: C
+
+4) Qual atalho normalmente cola um conteúdo previamente copiado?
+A) Ctrl+A
+B) Ctrl+P
+C) Ctrl+F
+D) Ctrl+V
+E) Ctrl+N
+GABARITO: D
+
+5) Qual programa é utilizado principalmente para criar apresentações de slides?
+A) PowerPoint
+B) Paint
+C) Bloco de Notas
+D) Calculadora
+E) Explorador de Arquivos
+GABARITO: A
+
+6) Em uma planilha, qual função calcula a média dos valores de A1 até A5?
+A) =SOMA(A1:A5)
+B) =MÉDIA(A1:A5)
+C) =CONTAR(A1:A5)
+D) =MAX(A1:A5)
+E) =MEDIAÇÃO(A1:A5)
+GABARITO: B
+
+7) Qual equipamento permite imprimir documentos em papel?
+A) Scanner
+B) Roteador
+C) Impressora
+D) Switch
+E) Webcam
+GABARITO: C
+
+8) Qual unidade representa normalmente a velocidade de transmissão de dados em uma rede?
+A) Litro
+B) Volt
+C) Hertz
+D) Mbps
+E) Quilograma
+GABARITO: D
+
+9) Qual protocolo é usado para atribuir automaticamente endereços IP aos dispositivos de uma rede?
+A) DHCP
+B) FTP
+C) SMTP
+D) POP3
+E) IMAP
+GABARITO: A
+
+10) Qual protocolo é usado para traduzir nomes de domínio em endereços IP?
+A) HTTP
+B) DNS
+C) SSH
+D) SNMP
+E) ARP
+GABARITO: B
+
+11) Qual prática reduz o risco de perda de dados importantes?
+A) Desativar o antivírus
+B) Fazer backups periódicos
+C) Compartilhar senhas
+D) Ignorar atualizações
+E) Usar somente uma cópia dos arquivos
+GABARITO: B
+
+12) O que caracteriza uma senha considerada mais segura?
+A) Apenas números
+B) Nome do usuário
+C) Data de nascimento
+D) Combinação longa de caracteres variados
+E) Palavra comum
+GABARITO: D
+
+13) Qual dispositivo converte documentos físicos em arquivos digitais?
+A) Scanner
+B) Projetor
+C) Switch
+D) Roteador
+E) Modem
+GABARITO: A
+
+14) Qual extensão normalmente identifica um documento do Microsoft Word moderno?
+A) .xlsx
+B) .pptx
+C) .docx
+D) .jpg
+E) .mp3
+GABARITO: C
+
+15) Qual extensão é normalmente associada a uma imagem JPEG?
+A) .exe
+B) .jpg
+C) .txt
+D) .zip
+E) .bat
+GABARITO: B
+
+16) Um computador possui 8 GB de RAM e recebe mais 8 GB. Qual será a capacidade total?
+A) 12 GB
+B) 14 GB
+C) 15 GB
+D) 16 GB
+E) 18 GB
+GABARITO: D
+
+17) Um equipamento custa R$ 200,00 e sofre aumento de 10%. Qual será o novo preço?
+A) R$ 210,00
+B) R$ 215,00
+C) R$ 220,00
+D) R$ 230,00
+E) R$ 240,00
+GABARITO: C
+
+18) Qual é a finalidade principal de um antivírus?
+A) Aumentar o tamanho do monitor
+B) Detectar e ajudar a remover softwares maliciosos
+C) Criar apresentações
+D) Compactar documentos
+E) Substituir a memória RAM
+GABARITO: B
+
+19) Na frase 'O técnico realizou a manutenção do equipamento', a palavra 'técnico' é classificada como:
+A) Verbo
+B) Advérbio
+C) Substantivo
+D) Preposição
+E) Conjunção
+GABARITO: C
+
+20) Qual atitude é adequada ao atender um usuário com problema de informática?
+A) Ignorar a solicitação
+B) Pedir a senha sem necessidade
+C) Registrar o problema e orientar o usuário com clareza
+D) Desligar o computador sem avisar
+E) Apagar arquivos para testar
+GABARITO: C

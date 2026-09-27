@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 6
+
+1) Qual é a função principal da memória RAM?
+A) Armazenar temporariamente dados e instruções em uso
+B) Fazer impressões
+C) Conectar redes diferentes
+D) Resfriar a CPU
+E) Fornecer energia
+GABARITO: A
+
+2) Qual é a função de uma placa de rede?
+A) Permitir comunicação do computador com uma rede
+B) Armazenar o sistema operacional
+C) Resfriar a CPU
+D) Exibir imagens
+E) Imprimir documentos
+GABARITO: A
+
+3) Qual componente é usado para armazenar o sistema operacional?
+A) SSD ou HD
+B) Mouse
+C) Monitor
+D) Fonte
+E) Microfone
+GABARITO: A
+
+4) Qual recurso protege o computador contra alterações de energia por curto período?
+A) Nobreak
+B) Switch
+C) Scanner
+D) Webcam
+E) Teclado
+GABARITO: A
+
+5) Qual é a finalidade da formatação de um disco?
+A) Preparar uma unidade para armazenamento utilizando um sistema de arquivos
+B) Aumentar fisicamente a capacidade do disco
+C) Melhorar o monitor
+D) Criar uma rede
+E) Trocar a fonte
+GABARITO: A
+
+6) Qual ferramenta do Windows permite visualizar arquivos e pastas?
+A) Explorador de Arquivos
+B) Calculadora
+C) Paint
+D) WordPad
+E) Relógio
+GABARITO: A
+
+7) Qual combinação seleciona todos os itens em muitos aplicativos?
+A) Ctrl+A
+B) Ctrl+B
+C) Ctrl+D
+D) Ctrl+E
+E) Ctrl+R
+GABARITO: A
+
+8) Qual combinação normalmente recorta um item?
+A) Ctrl+X
+B) Ctrl+C
+C) Ctrl+V
+D) Ctrl+Z
+E) Ctrl+S
+GABARITO: A
+
+9) Qual combinação normalmente imprime um documento?
+A) Ctrl+P
+B) Ctrl+I
+C) Ctrl+T
+D) Ctrl+M
+E) Ctrl+L
+GABARITO: A
+
+10) Qual função do Excel retorna o menor valor?
+A) =MÍNIMO(A1:A10)
+B) =BAIXO(A1:A10)
+C) =MENORVALOR(A1:A10)
+D) =REDUZIR(A1:A10)
+E) =MINHA(A1:A10)
+GABARITO: A
+
+11) Qual recurso permite organizar dados em ordem crescente ou decrescente?
+A) Classificação
+B) Impressão
+C) Zoom
+D) Margem
+E) Revisão
+GABARITO: A
+
+12) Qual recurso do Excel permite mostrar apenas registros que atendem a critérios?
+A) Filtro
+B) Zoom
+C) Cabeçalho
+D) Rodapé
+E) Quebra de página
+GABARITO: A
+
+13) Qual ameaça bloqueia arquivos e pode exigir pagamento para recuperação?
+A) Ransomware
+B) Firewall
+C) Backup
+D) Cookie
+E) Driver
+GABARITO: A
+
+14) O que é um trojan?
+A) Malware que pode se disfarçar como software legítimo
+B) Tipo de monitor
+C) Sistema de arquivos
+D) Cabo de rede
+E) Programa de backup
+GABARITO: A
+
+15) Qual prática ajuda a reduzir vulnerabilidades?
+A) Manter sistemas e aplicativos atualizados
+B) Ignorar atualizações
+C) Compartilhar contas
+D) Desativar firewall
+E) Usar software desconhecido
+GABARITO: A
+
+16) Qual informação nunca deve ser compartilhada sem necessidade?
+A) Senha de acesso
+B) Horário de trabalho público
+C) Nome do software
+D) Manual do equipamento
+E) Número de versão pública
+GABARITO: A
+
+17) Um setor possui 12 computadores e compra mais 8. Quantos terá?
+A) 18
+B) 19
+C) 20
+D) 21
+E) 22
+GABARITO: C
+
+18) Um equipamento de R$ 400,00 teve aumento de 25%. O novo valor é:
+A) R$ 450,00
+B) R$ 475,00
+C) R$ 500,00
+D) R$ 525,00
+E) R$ 550,00
+GABARITO: C
+
+19) Qual palavra está escrita corretamente?
+A) Privilégio
+B) Previlégio
+C) Priviléjio
+D) Privilegioo
+E) Previléjio
+GABARITO: A
+
+20) Ao diagnosticar um problema, o técnico deve primeiro:
+A) Coletar informações sobre o problema e reproduzir o erro quando possível
+B) Formatar imediatamente
+C) Trocar todas as peças
+D) Apagar os arquivos
+E) Desinstalar o sistema
+GABARITO: A

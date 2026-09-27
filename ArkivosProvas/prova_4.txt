@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 4
+
+1) Qual componente permite ao usuário visualizar informações através de janelas, ícones e menus?
+A) Kernel
+B) Interface gráfica (GUI)
+C) BIOS
+D) Driver
+E) Firmware
+GABARITO: B
+
+2) O que é um "driver" de dispositivo?
+A) Um programa que gerencia a comunicação entre o sistema operacional e um hardware específico
+B) Um tipo de vírus
+C) Um componente físico do computador
+D) Um protocolo de rede
+E) Um formato de arquivo de imagem
+GABARITO: A
+
+3) Qual das opções é um exemplo de aplicativo de escritório (produtividade)?
+A) Windows Media Player
+B) Microsoft Word
+C) Adobe Photoshop
+D) VLC
+E) Skype
+GABARITO: B
+
+4) A função =CONCATENAR (ou =CONCAT) no Excel serve para:
+A) Somar valores numéricos
+B) Unir textos de diferentes células em uma só
+C) Contar células vazias
+D) Ordenar uma tabela
+E) Calcular a média
+GABARITO: B
+
+5) Para inserir uma nova linha acima da linha selecionada no Excel, deve-se:
+A) Clicar com o botão direito na linha e escolher "Inserir"
+B) Pressionar Ctrl+N
+C) Selecionar Arquivo > Nova Linha
+D) Pressionar Alt+F4
+E) Usar a função =LINHA()
+GABARITO: A
+
+6) A ferramenta "Formatação Condicional" no Excel serve para:
+A) Proteger a planilha com senha
+B) Aplicar formatos visuais (cores, ícones) às células com base em regras definidas
+C) Converter texto em número
+D) Criar gráficos automaticamente
+E) Ordenar dados alfabeticamente
+GABARITO: B
+
+7) O que é um "antivírus"?
+A) Um hardware que aumenta a velocidade da internet
+B) Um software projetado para detectar, prevenir e remover programas maliciosos
+C) Um protocolo de rede sem fio
+D) Um tipo de backup em nuvem
+E) Um sistema de autenticação biométrica
+GABARITO: B
+
+8) A prática de manter cópias de segurança dos dados em locais diferentes (ex.: nuvem e HD externo) é chamada de:
+A) Redundância de backup (regra 3-2-1)
+B) Overclock
+C) Phishing
+D) Engenharia reversa
+E) Virtualização
+GABARITO: A
+
+9) Qual das opções abaixo representa um risco de segurança da informação?
+A) Manter o sistema operacional atualizado
+B) Usar senhas diferentes para cada serviço
+C) Clicar em links de e-mails desconhecidos sem verificar a procedência
+D) Ativar a autenticação de dois fatores
+E) Realizar backups periódicos
+GABARITO: C
+
+10) Qual é a unidade de medida utilizada para indicar a capacidade de armazenamento de um HD ou SSD?
+A) Hertz
+B) Watts
+C) Bytes (KB, MB, GB, TB)
+D) Volts
+E) Amperes
+GABARITO: C
+
+11) O que é um "cooler" em um computador?
+A) Um dispositivo de armazenamento
+B) Um sistema de resfriamento (ventilação) de componentes como o processador
+C) Um tipo de memória RAM
+D) Um cabo de conexão de vídeo
+E) Um software de monitoramento
+GABARITO: B
+
+12) Qual dos itens abaixo é considerado um periférico de entrada?
+A) Monitor
+B) Impressora
+C) Teclado
+D) Caixa de som
+E) Projetor
+GABARITO: C
+
+13) O que é uma rede LAN?
+A) Uma rede de longa distância que interliga cidades diferentes
+B) Uma rede local, geralmente restrita a um prédio ou escritório
+C) Um tipo de vírus de rede
+D) Um protocolo de e-mail
+E) Um serviço de streaming de vídeo
+GABARITO: B
+
+14) Qual protocolo é utilizado para transferência de arquivos entre computadores em uma rede?
+A) FTP
+B) SMTP
+C) HTTP apenas
+D) POP3
+E) ICMP
+GABARITO: A
+
+15) O que caracteriza uma rede Wi-Fi (sem fio)?
+A) Utiliza exclusivamente cabos de fibra óptica
+B) Transmite dados através de ondas de rádio, sem necessidade de cabos
+C) Funciona apenas em ambientes fechados
+D) Requer conexão direta via cabo serial
+E) É exclusiva para redes corporativas
+GABARITO: B
+
+16) Um técnico precisa formatar 18 computadores. Se ele consegue formatar 3 por hora, quantas horas serão necessárias para concluir o serviço?
+A) 4
+B) 5
+C) 6
+D) 7
+E) 8
+GABARITO: C
+
+17) Um produto custava R$ 250,00 e teve uma redução de R$ 50,00 no preço. Qual foi a porcentagem de desconto aplicada?
+A) 10%
+B) 15%
+C) 20%
+D) 25%
+E) 30%
+GABARITO: C
+
+18) Uma empresa contratou 3 técnicos para atender 90 chamados. Se os chamados forem divididos igualmente entre eles, quantos chamados cada técnico atenderá?
+A) 25
+B) 28
+C) 30
+D) 32
+E) 35
+GABARITO: C
+
+19) Assinale a alternativa em que o plural está correto:
+A) Os cidadão
+B) Os cidadãos
+C) Os cidadães
+D) Os cidadaos
+E) Os cidadons
+GABARITO: B
+
+20) Na frase "Caso o sistema apresente erro, reinicie o computador", a oração destacada expressa ideia de:
+A) Tempo
+B) Condição
+C) Causa
+D) Concessão
+E) Finalidade
+GABARITO: B

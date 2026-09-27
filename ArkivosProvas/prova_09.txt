@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 9
+
+1) Qual componente realiza cálculos e executa instruções?
+A) CPU
+B) Monitor
+C) SSD
+D) Fonte
+E) Teclado
+GABARITO: A
+
+2) Qual componente é utilizado para armazenamento rápido?
+A) SSD
+B) Mouse
+C) Monitor
+D) Fonte
+E) Microfone
+GABARITO: A
+
+3) Qual memória perde seu conteúdo ao desligar o computador?
+A) RAM
+B) SSD
+C) HD
+D) Pendrive
+E) ROM
+GABARITO: A
+
+4) Qual é a função de uma placa de vídeo?
+A) Processar e gerar gráficos
+B) Armazenar senhas
+C) Fornecer internet
+D) Imprimir
+E) Resfriar o computador
+GABARITO: A
+
+5) Qual dispositivo permite entrada de voz?
+A) Microfone
+B) Monitor
+C) Impressora
+D) Projetor
+E) Caixa de som
+GABARITO: A
+
+6) Qual conexão pode transportar áudio e vídeo digital?
+A) HDMI
+B) PS/2
+C) RJ-11
+D) Serial
+E) VGA apenas
+GABARITO: A
+
+7) Qual protocolo é utilizado para transferência de arquivos?
+A) FTP
+B) DNS
+C) DHCP
+D) SMTP
+E) IMAP
+GABARITO: A
+
+8) Qual protocolo é utilizado para envio de e-mails?
+A) SMTP
+B) FTP
+C) DNS
+D) DHCP
+E) SSH
+GABARITO: A
+
+9) Qual protocolo é usado para acesso remoto seguro?
+A) SSH
+B) FTP
+C) HTTP
+D) SMTP
+E) POP3
+GABARITO: A
+
+10) Qual equipamento pode proteger contra interrupções de energia?
+A) Nobreak
+B) Switch
+C) Scanner
+D) Mouse
+E) Monitor
+GABARITO: A
+
+11) Qual é o objetivo de um backup incremental?
+A) Copiar alterações desde um backup anterior
+B) Apagar todos os dados
+C) Formatar o disco
+D) Atualizar o monitor
+E) Desligar o servidor
+GABARITO: A
+
+12) Qual é uma boa prática para backups?
+A) Manter cópias em locais adequados e testar a restauração
+B) Manter uma única cópia no mesmo disco
+C) Nunca testar
+D) Excluir os backups antigos sem critério
+E) Compartilhar livremente
+GABARITO: A
+
+13) Qual malware pode criptografar arquivos e exigir pagamento?
+A) Ransomware
+B) Adware
+C) Driver
+D) Cookie
+E) Firmware
+GABARITO: A
+
+14) Qual malware pode exibir publicidade indesejada?
+A) Adware
+B) Ransomware
+C) Firewall
+D) Backup
+E) Driver
+GABARITO: A
+
+15) Qual atitude é segura diante de um link suspeito?
+A) Não clicar e verificar a origem
+B) Clicar rapidamente
+C) Informar senha
+D) Encaminhar para colegas
+E) Desativar o navegador
+GABARITO: A
+
+16) Qual recurso ajuda a impedir conexões não autorizadas?
+A) Firewall
+B) Word
+C) Excel
+D) Scanner
+E) Bluetooth
+GABARITO: A
+
+17) Uma unidade possui 2 TB e está com 1 TB ocupado. Qual percentual está ocupado?
+A) 50%
+B) 25%
+C) 40%
+D) 60%
+E) 75%
+GABARITO: A
+
+18) Um teclado custa R$ 100,00 e aumenta 20%. Qual será o novo preço?
+A) R$ 120,00
+B) R$ 110,00
+C) R$ 125,00
+D) R$ 130,00
+E) R$ 140,00
+GABARITO: A
+
+19) Qual palavra está correta?
+A) Segurança
+B) Seguransa
+C) Segurância
+D) Seguransa
+E) Segurãnça
+GABARITO: A
+
+20) Em suporte técnico, informações confidenciais devem ser:
+A) Tratadas com sigilo e acessadas somente quando necessário
+B) Publicadas
+C) Enviadas para qualquer pessoa
+D) Armazenadas em computadores públicos
+E) Compartilhadas em redes sociais
+GABARITO: A

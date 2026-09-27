@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EXAM://FORGE</title>
+<style>
+:root{
+  --bg:#050810; --cyan:#00fff2; --magenta:#ff2bd6; --purple:#8b5cf6;
+  --success:#00ffab; --danger:#ff2b6d; --text:#d6f7ff; --muted:#7d9aac;
+}
+*{box-sizing:border-box;}
+body{
+  margin:0; min-height:100vh; font-family:Consolas,'Courier New',monospace; color:var(--text);
+  background:
+    radial-gradient(circle at 15% 8%, rgba(139,92,246,.20), transparent 42%),
+    radial-gradient(circle at 85% 92%, rgba(0,255,242,.14), transparent 42%),
+    var(--bg);
+  display:flex;
+}
+.bg-grid{position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(rgba(0,255,242,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,242,.05) 1px,transparent 1px);
+  background-size:38px 38px; animation:gridMove 14s linear infinite;}
+@keyframes gridMove{from{background-position:0 0,0 0;}to{background-position:0 38px,38px 0;}}
+.sidebar{
+  width:54px; min-height:100vh; background:rgba(5,8,16,.92);
+  border-right:1px solid rgba(0,255,242,.18); display:flex; flex-direction:column;
+  align-items:center; padding:14px 0; gap:6px; position:fixed; left:0; top:0; z-index:10;
+}
+.sidebar a{
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  width:42px; height:42px; border-radius:8px; text-decoration:none;
+  color:var(--muted); font-size:.6rem; letter-spacing:.04em; gap:3px;
+  transition:.15s; border:1px solid transparent;
+}
+.sidebar a:hover{color:var(--cyan); border-color:rgba(0,255,242,.3); background:rgba(0,255,242,.07);}
+.sidebar a.active{color:var(--magenta); border-color:rgba(255,43,214,.4); background:rgba(255,43,214,.08);}
+.sidebar .icon{font-size:1.1rem;}
+.sidebar-sep{width:30px; height:1px; background:rgba(0,255,242,.15); margin:4px 0;}
+#app{max-width:720px; margin:0 auto; padding:18px 16px 40px; margin-left:54px; flex:1;}
+@media(max-width:640px){
+  .sidebar{
+    width:100%;min-height:auto;height:auto;
+    position:fixed;bottom:0;top:auto;left:0;
+    flex-direction:row;flex-wrap:nowrap;
+    padding:0;border-right:none;border-top:1px solid rgba(0,255,242,.18);
+    justify-content:space-around;z-index:20;
+  }
+  .sidebar-sep{display:none;}
+  .sidebar a{width:auto;flex:1;height:52px;border-radius:0;border:none;border-top:2px solid transparent;font-size:.55rem;}
+  .sidebar a.active{border-top-color:var(--magenta);border-color:transparent;border-top-color:var(--magenta);}
+  #app{margin-left:0;padding:14px 12px 80px;}
+  .title{font-size:1.2rem;}
+  .btn{padding:11px 12px;font-size:.8rem;}
+  .modal-box{max-height:92vh;}
+}
+header{text-align:center;margin-bottom:18px;}
+.title{font-size:1.5rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);
+  text-shadow:0 0 8px var(--cyan),0 0 22px rgba(0,255,242,.6);position:relative;display:inline-block;}
+.title::before,.title::after{content:attr(data-text);position:absolute;left:0;top:0;width:100%;}
+.title::before{color:var(--magenta);clip-path:inset(0 0 55% 0);animation:gl1 3.4s infinite linear;}
+.title::after{color:var(--purple);clip-path:inset(55% 0 0 0);animation:gl2 2.7s infinite linear;}
+@keyframes gl1{0%,88%,100%{transform:translate(0,0);}91%{transform:translate(-2px,-1px);}95%{transform:translate(2px,1px);}}
+@keyframes gl2{0%,88%,100%{transform:translate(0,0);}90%{transform:translate(2px,1px);}96%{transform:translate(-2px,-1px);}}
+.subtitle{color:var(--muted);font-size:.76rem;letter-spacing:.05em;margin-top:6px;}
+.card{background:rgba(10,20,35,.65);border:1px solid rgba(0,255,242,.32);border-radius:10px;
+  padding:16px;margin-bottom:14px;box-shadow:0 0 18px rgba(0,255,242,.08);backdrop-filter:blur(6px);}
+label{display:block;color:var(--muted);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;margin:12px 0 5px;}
+label:first-child{margin-top:0;}
+input[type=text],input[type=password],textarea,select{
+  width:100%;background:#02060c;color:var(--text);border:1px solid rgba(0,255,242,.3);
+  border-radius:6px;padding:10px;font-family:inherit;font-size:.85rem;
+}
+textarea{min-height:70px;resize:vertical;}
+select{appearance:none;-webkit-appearance:none;}
+.btn{font-family:inherit;text-transform:uppercase;letter-spacing:.06em;background:transparent;
+  color:var(--cyan);border:1px solid var(--cyan);padding:9px 14px;border-radius:6px;cursor:pointer;
+  font-size:.78rem;transition:.15s;}
+.btn:hover{background:rgba(0,255,242,.12);box-shadow:0 0 14px rgba(0,255,242,.5);}
+.btn:disabled{opacity:.3;cursor:not-allowed;box-shadow:none;}
+.btn.magenta{color:var(--magenta);border-color:var(--magenta);}
+.btn.magenta:hover{background:rgba(255,43,214,.12);box-shadow:0 0 14px rgba(255,43,214,.5);}
+.btn.success{color:var(--success);border-color:var(--success);}
+.btn.success:hover{background:rgba(0,255,171,.12);box-shadow:0 0 14px rgba(0,255,171,.5);}
+.btn.sm{padding:5px 10px;font-size:.68rem;}
+.row{display:flex;gap:8px;flex-wrap:wrap;}
+[hidden]{display:none!important;}
+.status{white-space:pre-wrap;font-size:.78rem;line-height:1.5;color:var(--success);
+  background:#02060c;border:1px solid rgba(0,255,171,.3);border-radius:6px;padding:10px;
+  max-height:220px;overflow:auto;}
+.pulse{animation:pulse 1.4s ease-in-out infinite;}
+@keyframes pulse{0%,100%{opacity:.5;}50%{opacity:1;}}
+.qlabel{color:var(--muted);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;}
+.resultado-q{font-weight:bold;margin:0 0 8px;}
+.opt-mini{padding:8px 10px;border-radius:6px;border:1px solid rgba(255,255,255,.12);margin-bottom:6px;font-size:.85rem;}
+.opt-mini.correct{border-color:var(--success);background:rgba(0,255,171,.12);}
+.letter{color:var(--cyan);font-weight:bold;}
+.erro{color:var(--danger);font-size:.82rem;margin-top:8px;white-space:pre-wrap;}
+.aviso{color:var(--muted);font-size:.75rem;margin-top:8px;}
+.api-hint{font-size:.68rem;color:var(--muted);margin-top:5px;line-height:1.5;}
+.api-hint a{color:var(--cyan);}
+.modal{position:fixed;inset:0;background:rgba(2,4,10,.85);display:flex;align-items:center;
+  justify-content:center;padding:16px;z-index:50;}
+.modal-box{max-width:520px;width:100%;max-height:85vh;overflow:auto;}
+hr.sep{border:none;border-top:1px solid rgba(0,255,242,.2);margin:14px 0;}
+.provider-row{display:flex;gap:8px;margin-bottom:10px;}
+.provider-btn{flex:1;padding:8px;border-radius:6px;border:1px solid rgba(0,255,242,.2);
+  background:transparent;color:var(--muted);font-family:inherit;font-size:.72rem;
+  text-transform:uppercase;letter-spacing:.06em;cursor:pointer;transition:.15s;}
+.provider-btn.sel{border-color:var(--cyan);color:var(--cyan);background:rgba(0,255,242,.08);}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<nav class="sidebar">
+  <a href="index.html" title="Dashboard"><span class="icon">◈</span>DASH</a>
+  <div class="sidebar-sep"></div>
+  <a href="exam-protocol.html" title="Simulados"><span class="icon">▶</span>QUIZ</a>
+  <a href="exam-forge.html" class="active" title="Forge"><span class="icon">✦</span>FORGE</a>
+</nav>
+<div id="app">
+  <header>
+    <div class="title" data-text="EXAM://FORGE">EXAM://FORGE</div>
+    <div class="subtitle">Gerador de provas por IA · usa API online (Groq ou OpenAI)</div>
+  </header>
+
+  <!-- TABS -->
+  <div class="provider-row" style="margin-bottom:18px;">
+    <button class="provider-btn sel" id="tab-ia" onclick="showTab('ia')">⚡ Gerar com IA</button>
+    <button class="provider-btn" id="tab-banco" onclick="showTab('banco')">📦 Banco Local (10 provas)</button>
+  </div>
+
+  <!-- CONFIG API -->
+  <div class="card" id="card-api">
+    <div class="qlabel" style="margin-bottom:10px;">⚙ Configuração da API</div>
+    <div class="provider-row">
+      <button class="provider-btn sel" id="prov-groq" onclick="setProvider('groq')">Groq (grátis)</button>
+      <button class="provider-btn" id="prov-openai" onclick="setProvider('openai')">OpenAI</button>
+    </div>
+    <label>Chave API <span id="api-key-label" style="color:var(--cyan);">(Groq)</span></label>
+    <div style="display:flex;gap:8px;">
+      <input type="password" id="in-apikey" placeholder="Cole sua chave aqui..." autocomplete="off">
+      <button class="btn sm" id="btn-salvar-key">Salvar</button>
+      <button class="btn sm magenta" id="btn-limpar-key">Limpar</button>
+    </div>
+    <div class="api-hint" id="api-hint-groq">
+      Groq é gratuito · Crie sua chave em <a href="https://console.groq.com/keys" target="_blank">console.groq.com/keys</a>
+    </div>
+    <div class="api-hint" id="api-hint-openai" hidden>
+      OpenAI · Crie sua chave em <a href="https://platform.openai.com/api-keys" target="_blank">platform.openai.com/api-keys</a>
+    </div>
+    <div class="aviso" id="key-status"></div>
+  </div>
+
+  <!-- FORM -->
+  <main id="screen-form">
+    <div class="card">
+      <label>Título da prova (opcional)</label>
+      <input type="text" id="in-titulo" placeholder="Ex.: Assistente de Tecnologia — Prova 6">
+      <label>Descrição / contexto</label>
+      <textarea id="in-descricao" placeholder="Ex.: Prova de nível médio para seleção de Assistente de Tecnologia."></textarea>
+      <label>Temas / assuntos a cobrir</label>
+      <textarea id="in-temas" placeholder="Ex.: Informática geral, Excel, segurança da informação, hardware, redes, matemática, português"></textarea>
+      <label>Nível de dificuldade</label>
+      <select id="in-nivel">
+        <option value="fácil">Fácil</option>
+        <option value="médio" selected>Médio</option>
+        <option value="difícil">Difícil</option>
+      </select>
+      <div class="row" style="margin-top:14px;">
+        <button class="btn success" id="btn-gerar">⚡ Gerar prova (20 questões)</button>
+        <button class="btn magenta" id="btn-cancelar" hidden>■ Cancelar</button>
+      </div>
+      <div class="status pulse" id="status-box" hidden></div>
+      <div class="erro" id="erro-box" hidden></div>
+    </div>
+  </main>
+
+  <!-- BANCO LOCAL -->
+  <section id="screen-banco" hidden>
+    <div class="card" style="margin-bottom:14px;">
+      <div class="qlabel" style="margin-bottom:10px;">10 provas prontas — Assistente de Tecnologia</div>
+      <div class="row">
+        <button class="btn success" id="btn-importar-todas">⇩ Importar todas (10)</button>
+      </div>
+      <div class="erro" id="banco-ok" style="color:var(--success);" hidden></div>
+    </div>
+    <div id="banco-lista"></div>
+  </section>
+
+  <!-- PREVIEW -->
+  <main id="screen-preview" hidden>
+    <div class="card">
+      <div class="row" style="justify-content:space-between;">
+        <strong id="preview-titulo"></strong>
+        <span class="qlabel" id="preview-count"></span>
+      </div>
+      <div class="row" style="margin-top:12px;">
+        <button class="btn success" id="btn-baixar-csv">⇩ Baixar CSV</button>
+        <button class="btn success" id="btn-baixar-txt">⇩ Baixar TXT</button>
+        <button class="btn" id="btn-salvar-provas">💾 Salvar nas provas</button>
+        <button class="btn" id="btn-regerar">↻ Gerar novamente</button>
+        <button class="btn magenta" id="btn-nova">+ Nova prova</button>
+      </div>
+      <div class="erro" id="salvar-ok" style="color:var(--success);" hidden></div>
+    </div>
+    <div id="preview-lista"></div>
+  </main>
+</div>
+
+<!-- MODAL FALLBACK -->
+<div class="modal" id="modal-fallback" hidden>
+  <div class="modal-box card">
+    <div class="row" style="justify-content:space-between;">
+      <strong>Arquivo: <span id="fallback-filename"></span></strong>
+      <button class="btn magenta" id="fechar-fallback">✕</button>
+    </div>
+    <hr class="sep">
+    <div class="qlabel">Copie o conteúdo abaixo e salve manualmente:</div>
+    <textarea id="fallback-textarea" style="min-height:200px;" readonly></textarea>
+    <div class="row" style="margin-top:10px;">
+      <button class="btn success" id="copiar-fallback">Copiar texto</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var LETTERS = ['A','B','C','D','E'];
+  var KEY_STORE = 'examForgeApiKey_v1';
+  var PROV_STORE = 'examForgeProvider_v1';
+  var provider = localStorage.getItem(PROV_STORE) || 'groq';
+  var provaAtual = null;
+  var abortCtrl = null;
+
+  function $(s){ return document.querySelector(s); }
+  function escHtml(s){ return String(s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
+
+  /* ── PROVIDER / KEY ── */
+  function setProvider(p){
+    provider = p;
+    localStorage.setItem(PROV_STORE, p);
+    $('#prov-groq').className  = 'provider-btn' + (p==='groq'?' sel':'');
+    $('#prov-openai').className= 'provider-btn' + (p==='openai'?' sel':'');
+    $('#api-hint-groq').hidden  = p !== 'groq';
+    $('#api-hint-openai').hidden= p !== 'openai';
+    $('#api-key-label').textContent = p==='groq' ? '(Groq)' : '(OpenAI)';
+    loadKeyDisplay();
+  }
+  window.setProvider = setProvider;
+
+  function loadKeyDisplay(){
+    var k = localStorage.getItem(KEY_STORE+'_'+provider) || '';
+    $('#in-apikey').value = k ? '••••••••' + k.slice(-4) : '';
+    $('#key-status').textContent = k ? '✔ Chave salva.' : 'Nenhuma chave configurada.';
+  }
+
+  $('#btn-salvar-key').addEventListener('click', function(){
+    var v = $('#in-apikey').value.trim();
+    if(!v || v.startsWith('••')) return;
+    localStorage.setItem(KEY_STORE+'_'+provider, v);
+    loadKeyDisplay();
+  });
+  $('#btn-limpar-key').addEventListener('click', function(){
+    localStorage.removeItem(KEY_STORE+'_'+provider);
+    $('#in-apikey').value = '';
+    $('#key-status').textContent = 'Chave removida.';
+  });
+  $('#in-apikey').addEventListener('focus', function(){
+    var k = localStorage.getItem(KEY_STORE+'_'+provider) || '';
+    if(k) this.value = k;
+  });
+
+  setProvider(provider);
+
+  /* ── PROMPT ── */
+  function buildPrompt(titulo, descricao, temas, nivel){
+    return 'Você é um elaborador de provas objetivas em português do Brasil (pt-BR).\n' +
+      'Crie uma prova com EXATAMENTE 20 questões de múltipla escolha, cada uma com exatamente 5 alternativas (A a E) e apenas 1 correta.\n\n' +
+      'Título: ' + (titulo || '(defina um título adequado)') + '\n' +
+      'Contexto: ' + (descricao || 'Nenhum.') + '\n' +
+      'Temas: ' + (temas || 'Defina assuntos coerentes com o contexto.') + '\n' +
+      'Dificuldade: ' + nivel + '\n\n' +
+      'Regras:\n' +
+      '- Exatamente 20 questões, 5 alternativas cada, apenas 1 correta.\n' +
+      '- Português correto (pt-BR), sem repetições.\n' +
+      '- Se houver cálculo, confira que a alternativa correta está matematicamente certa.\n\n' +
+      'Responda APENAS com JSON válido, sem texto antes ou depois:\n' +
+      '{"titulo":"string","questoes":[{"enunciado":"string","alternativas":["alt A","alt B","alt C","alt D","alt E"],"correta":"A"}]}\n' +
+      'O array "questoes" deve ter exatamente 20 itens.';
+  }
+
+  /* ── CHAMADA API ── */
+  function getApiKey(){ return localStorage.getItem(KEY_STORE+'_'+provider) || ''; }
+
+  function callApi(prompt, signal){
+    var key = getApiKey();
+    if(!key) return Promise.reject(new Error('Configure sua chave API antes de gerar.'));
+
+    if(provider === 'groq'){
+      return fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method:'POST', signal:signal,
+        headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},
+        body: JSON.stringify({
+          model: 'llama3-70b-8192',
+          messages:[{role:'user', content:prompt}],
+          temperature: 0.7,
+          response_format: {type:'json_object'}
+        })
+      }).then(function(r){
+        if(!r.ok) return r.text().then(function(t){ throw new Error('Groq '+r.status+': '+t.slice(0,200)); });
+        return r.json();
+      }).then(function(j){
+        var content = j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
+        if(!content) throw new Error('Resposta vazia da API.');
+        return JSON.parse(content);
+      });
+    }
+
+    /* OpenAI */
+    return fetch('https://api.openai.com/v1/chat/completions', {
+      method:'POST', signal:signal,
+      headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},
+      body: JSON.stringify({
+        model: 'gpt-4o-mini',
+        messages:[{role:'user', content:prompt}],
+        temperature: 0.7,
+        response_format: {type:'json_object'}
+      })
+    }).then(function(r){
+      if(!r.ok) return r.text().then(function(t){ throw new Error('OpenAI '+r.status+': '+t.slice(0,200)); });
+      return r.json();
+    }).then(function(j){
+      var content = j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
+      if(!content) throw new Error('Resposta vazia da API.');
+      return JSON.parse(content);
+    });
+  }
+
+  /* ── VALIDAÇÃO ── */
+  function validar(data){
+    if(!data || !Array.isArray(data.questoes)) throw new Error('JSON sem campo "questoes".');
+    var validas = data.questoes.filter(function(q){
+      return q && typeof q.enunciado==='string' && Array.isArray(q.alternativas) &&
+        q.alternativas.length===5 && typeof q.correta==='string' &&
+        LETTERS.indexOf(q.correta.toUpperCase())!==-1;
+    }).map(function(q){
+      return {
+        enunciado: q.enunciado.trim(),
+        alternativas: q.alternativas.map(function(a){ return String(a).trim(); }),
+        correta: LETTERS.indexOf(q.correta.toUpperCase())
+      };
+    });
+    if(!validas.length) throw new Error('Nenhuma questão válida retornada.');
+    return {titulo:(data.titulo||'Prova gerada por IA').trim(), questoes:validas};
+  }
+
+  /* ── GERAR ── */
+  function setGerando(on){
+    $('#btn-gerar').disabled = on;
+    $('#btn-cancelar').hidden = !on;
+    $('#status-box').hidden = !on;
+    if(on){ $('#status-box').textContent='⏳ Aguardando resposta da API...'; $('#erro-box').hidden=true; }
+  }
+
+  function gerar(){
+    var key = getApiKey();
+    if(!key){ mostrarErro('Configure e salve sua chave API primeiro.'); return; }
+    var prompt = buildPrompt(
+      $('#in-titulo').value.trim(),
+      $('#in-descricao').value.trim(),
+      $('#in-temas').value.trim(),
+      $('#in-nivel').value
+    );
+    abortCtrl = new AbortController();
+    setGerando(true);
+    callApi(prompt, abortCtrl.signal).then(function(data){
+      var prova;
+      try{ prova = validar(data); } catch(e){ setGerando(false); mostrarErro(e.message); return; }
+      setGerando(false);
+      if(prova.questoes.length !== 20){
+        mostrarErro('Atenção: a IA retornou '+prova.questoes.length+' questão(ões) em vez de 20. Você pode baixar assim ou gerar novamente.');
+      }
+      provaAtual = prova;
+      renderPreview();
+    }).catch(function(err){
+      setGerando(false);
+      if(err && err.name==='AbortError') return;
+      mostrarErro(err.message || 'Falha ao gerar a prova.');
+    });
+  }
+
+  function mostrarErro(msg){ $('#erro-box').hidden=false; $('#erro-box').textContent=msg; }
+
+  $('#btn-gerar').addEventListener('click', gerar);
+  $('#btn-cancelar').addEventListener('click', function(){ if(abortCtrl) abortCtrl.abort(); setGerando(false); });
+  $('#btn-regerar').addEventListener('click', function(){ $('#screen-preview').hidden=true; $('#screen-form').hidden=false; gerar(); });
+  $('#btn-nova').addEventListener('click', function(){ provaAtual=null; $('#screen-preview').hidden=true; $('#screen-form').hidden=false; });
+
+  /* ── PREVIEW ── */
+  function renderPreview(){
+    $('#screen-form').hidden=true; $('#screen-preview').hidden=false;
+    $('#preview-titulo').textContent = provaAtual.titulo;
+    $('#preview-count').textContent = provaAtual.questoes.length+' questões';
+    var lista=$('#preview-lista'); lista.innerHTML='';
+    provaAtual.questoes.forEach(function(q,i){
+      var box=document.createElement('div'); box.className='card';
+      var opts='';
+      q.alternativas.forEach(function(a,li){
+        opts+='<div class="opt-mini'+(li===q.correta?' correct':'')+'"><span class="letter">'+LETTERS[li]+')</span> '+escHtml(a)+'</div>';
+      });
+      box.innerHTML='<div class="resultado-q">'+(i+1)+'. '+escHtml(q.enunciado)+'</div>'+opts;
+      lista.appendChild(box);
+    });
+  }
+
+  /* ── EXPORT ── */
+  function csvEscape(s){
+    s=String(s);
+    if(s.indexOf(',')!==-1||s.indexOf('"')!==-1||s.indexOf('\n')!==-1) return '"'+s.replace(/"/g,'""')+'"';
+    return s;
+  }
+  function buildCsv(p){
+    var rows=['titulo,enunciado,A,B,C,D,E,gabarito'];
+    p.questoes.forEach(function(q){
+      rows.push([p.titulo,q.enunciado].concat(q.alternativas).concat([LETTERS[q.correta]]).map(csvEscape).join(','));
+    });
+    return rows.join('\n');
+  }
+  function buildTxt(p){
+    var out='PROVA: '+p.titulo+'\n\n';
+    p.questoes.forEach(function(q,i){
+      out+=(i+1)+') '+q.enunciado+'\n';
+      q.alternativas.forEach(function(a,li){ out+=LETTERS[li]+') '+a+'\n'; });
+      out+='GABARITO: '+LETTERS[q.correta]+'\n\n';
+    });
+    return out;
+  }
+  function sanitize(s){ return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9]+/g,'_').slice(0,60); }
+
+  function salvarArquivo(filename, texto){
+    try{
+      var blob=new Blob([texto],{type:'text/plain;charset=utf-8'});
+      var url=URL.createObjectURL(blob);
+      var a=document.createElement('a'); a.href=url; a.download=filename;
+      document.body.appendChild(a); a.click();
+      setTimeout(function(){ URL.revokeObjectURL(url); a.remove(); },1000);
+    }catch(e){ mostrarTextoModal(texto, filename); }
+  }
+  function mostrarTextoModal(texto, filename){
+    $('#fallback-filename').textContent=filename;
+    $('#fallback-textarea').value=texto;
+    $('#modal-fallback').hidden=false;
+  }
+
+  $('#btn-baixar-csv').addEventListener('click', function(){ if(provaAtual) salvarArquivo(sanitize(provaAtual.titulo)+'.csv', buildCsv(provaAtual)); });
+  $('#btn-baixar-txt').addEventListener('click', function(){ if(provaAtual) salvarArquivo(sanitize(provaAtual.titulo)+'.txt', buildTxt(provaAtual)); });
+
+  $('#btn-salvar-provas').addEventListener('click', function(){
+    if(!provaAtual) return;
+    var KEY='examProtocolProvas_v1', provas=[];
+    try{ provas=JSON.parse(localStorage.getItem(KEY)||'[]'); }catch(e){}
+    provas.push({id:'p'+Date.now()+Math.random().toString(36).slice(2,6), titulo:provaAtual.titulo, questoes:provaAtual.questoes});
+    localStorage.setItem(KEY, JSON.stringify(provas));
+    var ok=$('#salvar-ok');
+    ok.textContent='✔ Prova "'+provaAtual.titulo+'" salva! Acesse em Simulados.';
+    ok.hidden=false;
+    setTimeout(function(){ ok.hidden=true; },4000);
+  });
+
+  $('#fechar-fallback').addEventListener('click', function(){ $('#modal-fallback').hidden=true; });
+  $('#copiar-fallback').addEventListener('click', function(){
+    var ta=$('#fallback-textarea'); ta.select(); try{ document.execCommand('copy'); }catch(e){}
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 1
+
+1) Qual das opções abaixo NÃO é um sistema operacional?
+A) Windows 11
+B) macOS Sonoma
+C) Ubuntu Linux
+D) Google Chrome
+E) Android
+GABARITO: D
+
+2) Em um computador, a sigla RAM significa:
+A) Read Access Memory
+B) Random Access Memory
+C) Rapid Access Module
+D) Read Allocation Memory
+E) Random Allocation Module
+GABARITO: B
+
+3) Qual extensão de arquivo é comumente usada para arquivos compactados?
+A) .exe
+B) .docx
+C) .zip
+D) .ini
+E) .dll
+GABARITO: C
+
+4) Em uma planilha do Excel, qual fórmula soma os valores das células A1 até A10?
+A) =SOMA(A1:A10)
+B) =SUM[A1-A10]
+C) =TOTAL(A1;A10)
+D) =ADD(A1:A10)
+E) =SOMAR(A1-A10)
+GABARITO: A
+
+5) Para congelar a primeira linha de uma planilha no Excel, deve-se utilizar a opção:
+A) Formatar > Congelar linha
+B) Exibir > Congelar Painéis > Congelar Linha Superior
+C) Dados > Bloquear Linha
+D) Layout > Fixar Cabeçalho
+E) Inserir > Linha Fixa
+GABARITO: B
+
+6) A função do Excel que retorna o maior valor de um intervalo é:
+A) =MÁXIMO(A1:A10)
+B) =MAIS(A1:A10)
+C) =TOPO(A1:A10)
+D) =ALTO(A1:A10)
+E) =SUPERIOR(A1:A10)
+GABARITO: A
+
+7) Qual das opções é uma boa prática de segurança da informação?
+A) Usar a mesma senha para todos os sistemas
+B) Compartilhar senhas por e-mail com colegas
+C) Ativar a autenticação de dois fatores (2FA)
+D) Desativar atualizações automáticas do sistema
+E) Anotar senhas em um post-it no monitor
+GABARITO: C
+
+8) O termo "phishing" refere-se a:
+A) Um tipo de vírus que danifica o hardware
+B) Uma técnica de engenharia social para roubar dados por meio de mensagens fraudulentas
+C) Um protocolo de criptografia de e-mails
+D) Um firewall de nova geração
+E) Um método de backup em nuvem
+GABARITO: B
+
+9) O que é um "ransomware"?
+A) Um software que otimiza o desempenho do computador
+B) Um tipo de malware que sequestra dados e exige resgate para liberá-los
+C) Um antivírus gratuito
+D) Um protocolo de rede sem fio
+E) Uma ferramenta de backup automático
+GABARITO: B
+
+10) Qual componente é considerado o "cérebro" do computador?
+A) HD (Disco Rígido)
+B) Placa de vídeo
+C) CPU (Processador)
+D) Fonte de alimentação
+E) Placa de rede
+GABARITO: C
+
+11) Qual dispositivo é um exemplo de memória de armazenamento não volátil?
+A) RAM
+B) Cache L1
+C) SSD
+D) Registrador do processador
+E) Memória Cache L2
+GABARITO: C
+
+12) Qual porta é comumente utilizada para conectar monitores modernos com suporte a áudio e vídeo digital?
+A) VGA
+B) PS/2
+C) HDMI
+D) Serial (RS-232)
+E) Paralela (LPT)
+GABARITO: C
+
+13) O que significa a sigla IP em "endereço IP"?
+A) Internet Provider
+B) Internet Protocol
+C) Internal Process
+D) Interface Program
+E) Information Packet
+GABARITO: B
+
+14) Qual dispositivo de rede é responsável por interligar redes diferentes e direcionar pacotes de dados entre elas?
+A) Switch
+B) Hub
+C) Roteador
+D) Repetidor
+E) Modem apenas
+GABARITO: C
+
+15) O protocolo utilizado para navegação segura na web, com criptografia, é:
+A) HTTP
+B) FTP
+C) HTTPS
+D) SMTP
+E) Telnet
+GABARITO: C
+
+16) Um técnico precisa converter 2 GB para MB. Considerando 1 GB = 1024 MB, esse valor corresponde a:
+A) 1000 MB
+B) 2048 MB
+C) 1024 MB
+D) 4096 MB
+E) 512 MB
+GABARITO: B
+
+17) Se um serviço de manutenção custa R$ 150,00 e é aplicado um desconto de 20%, qual o valor final?
+A) R$ 130,00
+B) R$ 100,00
+C) R$ 120,00
+D) R$ 135,00
+E) R$ 110,00
+GABARITO: C
+
+18) Um HD tem capacidade de 500 GB e está ocupado com 375 GB de dados. Qual a porcentagem de espaço ocupado?
+A) 65%
+B) 70%
+C) 75%
+D) 80%
+E) 85%
+GABARITO: C
+
+19) Assinale a alternativa em que todas as palavras estão grafadas corretamente:
+A) Beneficiente, previlégio, ascenção
+B) Benefício, privilégio, ascensão
+C) Benefíssio, previlégio, asenção
+D) Benefício, previlégio, ascenção
+E) Benefíssio, privilégio, ascensão
+GABARITO: B
+
+20) Na frase "O técnico verificou se os computadores estavam funcionando corretamente antes de encerrar o expediente", a oração "antes de encerrar o expediente" expressa ideia de:
+A) Causa
+B) Consequência
+C) Tempo
+D) Condição
+E) Finalidade
+GABARITO: C

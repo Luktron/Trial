@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 3
+
+1) Qual sistema operacional é baseado em Linux?
+A) Ubuntu
+B) Windows
+C) iOS
+D) macOS
+E) DOS
+GABARITO: A
+
+2) Qual sistema operacional móvel é desenvolvido pelo Google?
+A) Android
+B) Windows Server
+C) Ubuntu Desktop
+D) FreeBSD
+E) DOS
+GABARITO: A
+
+3) Qual componente armazena dados permanentemente?
+A) RAM
+B) Cache
+C) SSD
+D) Registrador
+E) Memória virtual
+GABARITO: C
+
+4) Qual é a função de um cooler?
+A) Armazenar arquivos
+B) Resfriar componentes
+C) Aumentar a capacidade do SSD
+D) Conectar à internet
+E) Imprimir documentos
+GABARITO: B
+
+5) Qual conector é frequentemente utilizado para rede Ethernet?
+A) RJ-45
+B) HDMI
+C) VGA
+D) PS/2
+E) P2
+GABARITO: A
+
+6) Qual conexão é destinada principalmente à transmissão digital de áudio e vídeo?
+A) HDMI
+B) PS/2
+C) RJ-11
+D) Serial
+E) Paralela
+GABARITO: A
+
+7) Qual comando de teclado normalmente desfaz uma ação?
+A) Ctrl+C
+B) Ctrl+V
+C) Ctrl+Z
+D) Ctrl+P
+E) Ctrl+F
+GABARITO: C
+
+8) Qual comando normalmente salva um documento?
+A) Ctrl+S
+B) Ctrl+X
+C) Ctrl+H
+D) Ctrl+G
+E) Ctrl+W
+GABARITO: A
+
+9) Qual recurso permite localizar uma palavra em um documento?
+A) Ctrl+F
+B) Ctrl+B
+C) Ctrl+E
+D) Ctrl+Y
+E) Ctrl+K
+GABARITO: A
+
+10) Qual aplicativo é apropriado para cálculos e tabelas?
+A) Excel
+B) Paint
+C) Bloco de Notas
+D) Calculadora física
+E) Reprodutor de mídia
+GABARITO: A
+
+11) Em uma planilha, qual função conta células que contêm números?
+A) =CONT.NÚM(A1:A10)
+B) =SOMA(A1:A10)
+C) =MÉDIA(A1:A10)
+D) =MÁXIMO(A1:A10)
+E) =TEXTO(A1:A10)
+GABARITO: A
+
+12) Qual fórmula soma B1 até B5?
+A) =SOMA(B1:B5)
+B) =TOTAL(B1-B5)
+C) =ADD(B1:B5)
+D) =SOMAR(B1:B5)
+E) =SUMA(B1-B5)
+GABARITO: A
+
+13) Qual ameaça utiliza mensagens falsas para induzir o usuário a fornecer informações?
+A) Phishing
+B) Backup
+C) Firewall
+D) Compressão
+E) Fragmentação
+GABARITO: A
+
+14) O que é firewall?
+A) Dispositivo ou software que controla tráfego de rede
+B) Editor de texto
+C) Tipo de monitor
+D) Unidade de armazenamento
+E) Programa de desenho
+GABARITO: A
+
+15) Qual ação ajuda a evitar acesso indevido a uma conta?
+A) Usar senha forte e autenticação multifator
+B) Compartilhar senha
+C) Desativar bloqueio de tela
+D) Usar senha '123456'
+E) Publicar a senha
+GABARITO: A
+
+16) Uma rede com alcance limitado a uma residência ou escritório é normalmente chamada de:
+A) LAN
+B) WAN
+C) MAN
+D) PAN
+E) SAN
+GABARITO: A
+
+17) Qual sigla representa uma rede de longa distância?
+A) LAN
+B) WAN
+C) USB
+D) CPU
+E) RAM
+GABARITO: B
+
+18) Um produto de R$ 800,00 com desconto de 25% custa:
+A) R$ 500,00
+B) R$ 550,00
+C) R$ 600,00
+D) R$ 650,00
+E) R$ 700,00
+GABARITO: C
+
+19) Qual frase está pontuada corretamente?
+A) O técnico, verificou o computador.
+B) O técnico verificou, o computador.
+C) O técnico verificou o computador.
+D) O técnico verificou o computador,
+E) O técnico, verificou, o computador.
+GABARITO: C
+
+20) Ao instalar um programa, a prática mais segura é:
+A) Baixá-lo de fonte confiável e verificar sua procedência
+B) Desativar o antivírus permanentemente
+C) Usar qualquer site
+D) Ignorar permissões
+E) Executar arquivos desconhecidos
+GABARITO: A

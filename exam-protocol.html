@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>EXAM://PROTOCOL</title>
+<style>
+:root{
+  --bg:#050810; --cyan:#00fff2; --magenta:#ff2bd6; --purple:#8b5cf6;
+  --success:#00ffab; --danger:#ff2b6d; --text:#d6f7ff; --muted:#7d9aac;
+  --sidebar:180px;
+}
+*{box-sizing:border-box;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);}
+body{
+  margin:0; min-height:100%; font-family:Consolas,'Courier New',monospace; color:var(--text);
+  background:
+    radial-gradient(circle at 15% 8%, rgba(139,92,246,.20), transparent 42%),
+    radial-gradient(circle at 85% 92%, rgba(0,255,242,.14), transparent 42%),
+    var(--bg);
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  display:flex;
+}
+.sidebar{position:fixed;top:0;left:0;width:var(--sidebar);height:100vh;
+  background:rgba(5,8,16,.92);border-right:1px solid rgba(0,255,242,.22);
+  display:flex;flex-direction:column;z-index:10;padding:20px 0;}
+.sidebar-logo{text-align:center;padding:0 12px 20px;border-bottom:1px solid rgba(0,255,242,.22);}
+.sidebar-logo .logo-text{font-size:.85rem;letter-spacing:.12em;color:var(--cyan);
+  text-shadow:0 0 8px var(--cyan);text-transform:uppercase;}
+.sidebar-logo .logo-sub{font-size:.6rem;color:var(--muted);margin-top:3px;}
+nav{flex:1;padding:16px 0;}
+nav a{display:flex;align-items:center;gap:8px;padding:10px 16px;color:var(--muted);
+  text-decoration:none;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;
+  border-left:2px solid transparent;transition:.15s;}
+nav a:hover{color:var(--cyan);background:rgba(0,255,242,.06);border-left-color:var(--cyan);}
+nav a.active{color:var(--cyan);border-left-color:var(--cyan);background:rgba(0,255,242,.08);}
+nav a .ico{font-size:1rem;flex-shrink:0;}
+.sidebar-footer{padding:12px 16px;border-top:1px solid rgba(0,255,242,.22);font-size:.6rem;color:var(--muted);text-align:center;}
+@media(max-width:640px){
+  :root{--sidebar:0px;}
+  .sidebar{
+    width:100%;height:auto;position:fixed;bottom:0;top:auto;left:0;
+    flex-direction:row;flex-wrap:nowrap;padding:0;
+    border-right:none;border-top:1px solid var(--border);
+    z-index:20;
+  }
+  .sidebar-logo{display:none;}
+  nav{display:flex;flex-direction:row;padding:0;flex:1;}
+  nav a{
+    flex:1;flex-direction:column;justify-content:center;align-items:center;
+    padding:8px 4px;border-left:none;border-top:2px solid transparent;
+    font-size:.55rem;gap:2px;
+  }
+  nav a .ico{font-size:1.2rem;}
+  nav a.active,nav a:hover{border-left:none;border-top-color:var(--cyan);background:rgba(0,255,242,.08);}
+  .sidebar-footer{display:none;}
+  #app{margin-left:0;padding:14px 12px 80px;}
+  .title{font-size:1.2rem;}
+  .opt{font-size:.95rem;padding:14px 12px;}
+  .btn{padding:11px 12px;font-size:.8rem;}
+  .row{gap:6px;}
+  .modal-box{max-height:92vh;}
+  .score-num{font-size:2rem;}
+}
+.bg-grid{position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(rgba(0,255,242,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(0,255,242,.05) 1px,transparent 1px);
+  background-size:38px 38px; animation:gridMove 14s linear infinite;}
+@keyframes gridMove{from{background-position:0 0,0 0;}to{background-position:0 38px,38px 0;}}
+#app{max-width:720px;margin-left:var(--sidebar);margin-right:auto;padding:18px 16px 40px;position:relative;z-index:1;}
+header{text-align:center;margin-bottom:18px;}
+.title{font-size:1.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan);
+  text-shadow:0 0 8px var(--cyan),0 0 22px rgba(0,255,242,.6);position:relative;display:inline-block;}
+.title::before,.title::after{content:attr(data-text);position:absolute;left:0;top:0;width:100%;}
+.title::before{color:var(--magenta);clip-path:inset(0 0 55% 0);animation:gl1 3.4s infinite linear;}
+.title::after{color:var(--purple);clip-path:inset(55% 0 0 0);animation:gl2 2.7s infinite linear;}
+@keyframes gl1{0%,88%,100%{transform:translate(0,0);}91%{transform:translate(-2px,-1px);}95%{transform:translate(2px,1px);}}
+@keyframes gl2{0%,88%,100%{transform:translate(0,0);}90%{transform:translate(2px,1px);}96%{transform:translate(-2px,-1px);}}
+.subtitle{color:var(--muted);font-size:.78rem;letter-spacing:.06em;margin-top:6px;}
+.card{background:rgba(10,20,35,.65);border:1px solid rgba(0,255,242,.32);border-radius:10px;
+  padding:16px;margin-bottom:14px;box-shadow:0 0 18px rgba(0,255,242,.08);backdrop-filter:blur(6px);}
+.btn{font-family:inherit;text-transform:uppercase;letter-spacing:.06em;background:transparent;
+  color:var(--cyan);border:1px solid var(--cyan);padding:9px 14px;border-radius:6px;cursor:pointer;
+  font-size:.78rem;transition:.15s;}
+.btn:hover{background:rgba(0,255,242,.12);box-shadow:0 0 14px rgba(0,255,242,.5);}
+.btn:disabled{opacity:.3;cursor:not-allowed;box-shadow:none;}
+.btn.magenta{color:var(--magenta);border-color:var(--magenta);}
+.btn.magenta:hover{background:rgba(255,43,214,.12);box-shadow:0 0 14px rgba(255,43,214,.5);}
+.btn.success{color:var(--success);border-color:var(--success);}
+.btn.success:hover{background:rgba(0,255,171,.12);box-shadow:0 0 14px rgba(0,255,171,.5);}
+.row{display:flex;gap:8px;flex-wrap:wrap;}
+.topbar{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:14px;flex-wrap:wrap;}
+.prova-title{font-weight:bold;color:var(--cyan);margin-bottom:4px;}
+.prova-meta{color:var(--muted);font-size:.75rem;margin-bottom:10px;}
+.opt{display:flex;gap:8px;width:100%;text-align:left;background:rgba(255,255,255,.02);
+  border:1px solid rgba(0,255,242,.25);color:var(--text);padding:12px 14px;border-radius:8px;
+  margin-bottom:9px;cursor:pointer;font-family:inherit;font-size:.9rem;}
+.opt:hover{border-color:var(--cyan);background:rgba(0,255,242,.06);}
+.opt.selected{border-color:var(--magenta);background:rgba(255,43,214,.14);box-shadow:0 0 14px rgba(255,43,214,.35);}
+.letter{color:var(--cyan);font-weight:bold;flex-shrink:0;}
+.progress{height:6px;border-radius:4px;background:rgba(255,255,255,.08);overflow:hidden;margin:10px 0 18px;}
+.progress-fill{height:100%;background:linear-gradient(90deg,var(--cyan),var(--magenta));transition:width .3s;}
+.qlabel{color:var(--muted);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;}
+.enunciado{margin:8px 0 16px;font-size:1rem;line-height:1.4;}
+.opt-mini{padding:8px 10px;border-radius:6px;border:1px solid rgba(255,255,255,.12);margin-bottom:6px;font-size:.85rem;}
+.opt-mini.correct{border-color:var(--success);background:rgba(0,255,171,.12);}
+.opt-mini.wrong{border-color:var(--danger);background:rgba(255,43,109,.14);}
+.resultado-q{font-weight:bold;margin-bottom:8px;}
+.tag-ok{color:var(--success);}
+.tag-bad{color:var(--danger);}
+.resultado-tag{margin-top:6px;font-size:.82rem;}
+.score-box{text-align:center;padding:22px 16px;}
+.score-num{font-size:2.4rem;color:var(--cyan);text-shadow:0 0 16px rgba(0,255,242,.6);}
+.score-pct{color:var(--muted);}
+[hidden]{display:none!important;}
+.modal{position:fixed;inset:0;background:rgba(2,4,10,.85);display:flex;align-items:center;
+  justify-content:center;padding:16px;z-index:50;}
+.modal-box{max-width:520px;width:100%;max-height:85vh;overflow:auto;}
+textarea{width:100%;min-height:140px;background:#02060c;color:var(--text);border:1px solid rgba(0,255,242,.3);
+  border-radius:6px;padding:10px;font-family:inherit;font-size:.82rem;}
+input[type=file]{color:var(--muted);font-size:.8rem;}
+.erro{color:var(--danger);font-size:.82rem;margin-top:8px;}
+.help-txt{font-size:.82rem;line-height:1.5;color:var(--text);white-space:pre-wrap;background:#02060c;
+  border:1px solid rgba(0,255,242,.25);border-radius:6px;padding:10px;}
+hr.sep{border:none;border-top:1px solid rgba(0,255,242,.2);margin:14px 0;}
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<aside class="sidebar">
+  <div class="sidebar-logo">
+    <div class="logo-text">EXAM://HUB</div>
+    <div class="logo-sub">painel de controle</div>
+  </div>
+  <nav>
+    <a href="index.html"><span class="ico">◈</span> Dashboard</a>
+    <a href="exam-protocol.html" class="active"><span class="ico">▶</span> Simulados</a>
+    <a href="exam-forge.html"><span class="ico">✦</span> Forge</a>
+  </nav>
+  <div class="sidebar-footer">EXAM://PROTOCOL v2</div>
+</aside>
+<div id="app">
+  <header>
+    <div class="title" data-text="EXAM://PROTOCOL">EXAM://PROTOCOL</div>
+    <div class="subtitle">Assistente de Tecnologia · banco de provas</div>
+  </header>
+
+  <main id="screen-menu">
+    <div class="topbar">
+      <button class="btn success" id="btn-add-prova">+ Adicionar prova</button>
+      <button class="btn" id="btn-formato">Ver formato TXT</button>
+    </div>
+    <div id="lista-provas"></div>
+  </main>
+
+  <main id="screen-quiz" hidden>
+    <div class="card">
+      <div class="row" style="justify-content:space-between;">
+        <span class="qlabel" id="quiz-titulo"></span>
+        <button class="btn magenta" id="btn-sair-quiz">Sair</button>
+      </div>
+      <div class="qlabel" id="quiz-progresso-label" style="margin-top:8px;"></div>
+      <div class="progress"><div class="progress-fill" id="quiz-progresso-fill"></div></div>
+      <div class="enunciado" id="quiz-enunciado"></div>
+      <div id="quiz-opcoes"></div>
+      <div class="row" style="justify-content:space-between;margin-top:10px;">
+        <button class="btn" id="btn-anterior">← Anterior</button>
+        <button class="btn success" id="btn-proxima">Próxima →</button>
+        <button class="btn success" id="btn-finalizar" hidden>Finalizar prova ✓</button>
+      </div>
+    </div>
+  </main>
+
+  <main id="screen-result" hidden>
+    <div class="card score-box">
+      <div class="qlabel">Resultado final</div>
+      <div class="score-num" id="resultado-score">0/0</div>
+      <div class="score-pct" id="resultado-pct">0%</div>
+      <div class="row" style="justify-content:center;margin-top:14px;">
+        <button class="btn success" id="btn-refazer">↻ Refazer</button>
+        <button class="btn" id="btn-voltar-menu">☰ Menu</button>
+      </div>
+    </div>
+    <div id="resultado-lista"></div>
+  </main>
+</div>
+
+<div class="modal" id="modal-add" hidden>
+  <div class="modal-box card">
+    <div class="row" style="justify-content:space-between;">
+      <strong>Adicionar prova (TXT)</strong>
+      <button class="btn magenta" id="fechar-add">✕</button>
+    </div>
+    <hr class="sep">
+    <div class="qlabel">Enviar arquivo .txt</div>
+    <input type="file" id="add-file" accept=".txt">
+    <hr class="sep">
+    <div class="qlabel">...ou cole o conteúdo TXT aqui</div>
+    <textarea id="add-textarea" placeholder="PROVA: Nome da prova&#10;&#10;1) Pergunta...&#10;A) ...&#10;B) ...&#10;C) ...&#10;D) ...&#10;E) ...&#10;GABARITO: C"></textarea>
+    <div class="erro" id="add-erro" hidden></div>
+    <div class="row" style="margin-top:10px;">
+      <button class="btn success" id="btn-processar-add">Processar e adicionar</button>
+      <button class="btn" id="btn-baixar-modelo">⇩ Baixar modelo TXT</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="modal-help" hidden>
+  <div class="modal-box card">
+    <div class="row" style="justify-content:space-between;">
+      <strong>Formato do arquivo TXT</strong>
+      <button class="btn magenta" id="fechar-help">✕</button>
+    </div>
+    <hr class="sep">
+    <div class="help-txt">PROVA: Nome da prova
+
+1) Enunciado da primeira pergunta?
+A) alternativa A
+B) alternativa B
+C) alternativa C
+D) alternativa D
+E) alternativa E
+GABARITO: C
+
+2) Enunciado da segunda pergunta?
+A) alternativa A
+B) alternativa B
+C) alternativa C
+D) alternativa D
+E) alternativa E
+GABARITO: A
+
+... repita para quantas questões quiser (recomendado: 20)</div>
+  </div>
+</div>
+
+<div class="modal" id="modal-fallback" hidden>
+  <div class="modal-box card">
+    <div class="row" style="justify-content:space-between;">
+      <strong>Arquivo: <span id="fallback-filename"></span></strong>
+      <button class="btn magenta" id="fechar-fallback">✕</button>
+    </div>
+    <hr class="sep">
+    <div class="qlabel">O download automático não está disponível aqui — copie o conteúdo abaixo e salve em um arquivo .txt:</div>
+    <textarea id="fallback-textarea" readonly></textarea>
+    <div class="row" style="margin-top:10px;">
+      <button class="btn success" id="copiar-fallback">Copiar texto</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var LETTERS=['A','B','C','D','E'];
+  var STORAGE_KEY='examProtocolProvas_v1';
+
+  var DEFAULT_PROVA={id:'default-1',titulo:'Assistente de Tecnologia — Prova 1',questoes:[
+    {enunciado:"Qual das opções abaixo NÃO é um sistema operacional?",alternativas:["Windows 11","macOS Sonoma","Ubuntu Linux","Google Chrome","Android"],correta:3},
+    {enunciado:"Em um computador, a sigla RAM significa:",alternativas:["Read Access Memory","Random Access Memory","Rapid Access Module","Read Allocation Memory","Random Allocation Module"],correta:1},
+    {enunciado:"Qual extensão de arquivo é comumente usada para arquivos compactados?",alternativas:[".exe",".docx",".zip",".ini",".dll"],correta:2},
+    {enunciado:"Em uma planilha do Excel, qual fórmula soma os valores das células A1 até A10?",alternativas:["=SOMA(A1:A10)","=SUM[A1-A10]","=TOTAL(A1;A10)","=ADD(A1:A10)","=SOMAR(A1-A10)"],correta:0},
+    {enunciado:"Para congelar a primeira linha de uma planilha no Excel, deve-se utilizar a opção:",alternativas:["Formatar > Congelar linha","Exibir > Congelar Painéis > Congelar Linha Superior","Dados > Bloquear Linha","Layout > Fixar Cabeçalho","Inserir > Linha Fixa"],correta:1},
+    {enunciado:"A função do Excel que retorna o maior valor de um intervalo é:",alternativas:["=MÁXIMO(A1:A10)","=MAIS(A1:A10)","=TOPO(A1:A10)","=ALTO(A1:A10)","=SUPERIOR(A1:A10)"],correta:0},
+    {enunciado:"Qual das opções é uma boa prática de segurança da informação?",alternativas:["Usar a mesma senha para todos os sistemas","Compartilhar senhas por e-mail com colegas","Ativar a autenticação de dois fatores (2FA)","Desativar atualizações automáticas do sistema","Anotar senhas em um post-it no monitor"],correta:2},
+    {enunciado:"O termo \"phishing\" refere-se a:",alternativas:["Um tipo de vírus que danifica o hardware","Uma técnica de engenharia social para roubar dados por meio de mensagens fraudulentas","Um protocolo de criptografia de e-mails","Um firewall de nova geração","Um método de backup em nuvem"],correta:1},
+    {enunciado:"O que é um \"ransomware\"?",alternativas:["Um software que otimiza o desempenho do computador","Um tipo de malware que sequestra dados e exige resgate para liberá-los","Um antivírus gratuito","Um protocolo de rede sem fio","Uma ferramenta de backup automático"],correta:1},
+    {enunciado:"Qual componente é considerado o \"cérebro\" do computador?",alternativas:["HD (Disco Rígido)","Placa de vídeo","CPU (Processador)","Fonte de alimentação","Placa de rede"],correta:2},
+    {enunciado:"Qual dispositivo é um exemplo de memória de armazenamento não volátil?",alternativas:["RAM","Cache L1","SSD","Registrador do processador","Memória Cache L2"],correta:2},
+    {enunciado:"Qual porta é comumente utilizada para conectar monitores modernos com suporte a áudio e vídeo digital?",alternativas:["VGA","PS/2","HDMI","Serial (RS-232)","Paralela (LPT)"],correta:2},
+    {enunciado:"O que significa a sigla IP em \"endereço IP\"?",alternativas:["Internet Provider","Internet Protocol","Internal Process","Interface Program","Information Packet"],correta:1},
+    {enunciado:"Qual dispositivo de rede é responsável por interligar redes diferentes e direcionar pacotes de dados entre elas?",alternativas:["Switch","Hub","Roteador","Repetidor","Modem apenas"],correta:2},
+    {enunciado:"O protocolo utilizado para navegação segura na web, com criptografia, é:",alternativas:["HTTP","FTP","HTTPS","SMTP","Telnet"],correta:2},
+    {enunciado:"Um técnico precisa converter 2 GB para MB. Considerando 1 GB = 1024 MB, esse valor corresponde a:",alternativas:["1000 MB","2048 MB","1024 MB","4096 MB","512 MB"],correta:1},
+    {enunciado:"Se um serviço de manutenção custa R$ 150,00 e é aplicado um desconto de 20%, qual o valor final?",alternativas:["R$ 130,00","R$ 100,00","R$ 120,00","R$ 135,00","R$ 110,00"],correta:2},
+    {enunciado:"Um HD tem capacidade de 500 GB e está ocupado com 375 GB de dados. Qual a porcentagem de espaço ocupado?",alternativas:["65%","70%","75%","80%","85%"],correta:2},
+    {enunciado:"Assinale a alternativa em que todas as palavras estão grafadas corretamente:",alternativas:["Beneficiente, previlégio, ascenção","Benefício, privilégio, ascensão","Benefíssio, previlégio, asenção","Benefício, previlégio, ascenção","Benefíssio, privilégio, ascensão"],correta:1},
+    {enunciado:"Na frase \"O técnico verificou se os computadores estavam funcionando corretamente antes de encerrar o expediente\", a oração \"antes de encerrar o expediente\" expressa ideia de:",alternativas:["Causa","Consequência","Tempo","Condição","Finalidade"],correta:2}
+  ]};
+
+  var provas = loadProvas();
+  var downloadsCap = null;
+  var state = {provaId:null, indice:0, respostas:[]};
+
+  function loadProvas(){
+    try{
+      var raw = localStorage.getItem(STORAGE_KEY);
+      if(raw){ var parsed = JSON.parse(raw); if(Array.isArray(parsed) && parsed.length) return parsed; }
+    }catch(e){}
+    return [DEFAULT_PROVA];
+  }
+  function saveProvas(){ try{ localStorage.setItem(STORAGE_KEY, JSON.stringify(provas)); }catch(e){} }
+
+  (function initCaps(){
+    try{
+      if(window.claude && window.claude.use){
+        window.claude.use('downloads').then(function(d){ downloadsCap=d; }).catch(function(){ downloadsCap=null; });
+      }
+    }catch(e){ downloadsCap=null; }
+  })();
+
+  function $(sel){ return document.querySelector(sel); }
+  function el(tag, cls){ var e=document.createElement(tag); if(cls) e.className=cls; return e; }
+  function escapeHtml(s){ return String(s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function showScreen(name){ ['menu','quiz','result'].forEach(function(s){ $('#screen-'+s).hidden = (s!==name); }); }
+
+  function renderMenu(){
+    showScreen('menu');
+    var list = $('#lista-provas'); list.innerHTML='';
+    provas.forEach(function(p){
+      var card = el('div','card prova-card');
+      card.innerHTML =
+        '<div class="prova-title">'+escapeHtml(p.titulo)+'</div>'+
+        '<div class="prova-meta">'+p.questoes.length+' questões</div>'+
+        '<div class="row">'+
+          '<button class="btn success" data-act="start" data-id="'+p.id+'">▶ Iniciar</button>'+
+          '<button class="btn" data-act="export" data-id="'+p.id+'">⇩ Exportar TXT</button>'+
+          '<button class="btn magenta" data-act="del" data-id="'+p.id+'">✕ Remover</button>'+
+        '</div>';
+      list.appendChild(card);
+    });
+  }
+  $('#lista-provas').addEventListener('click', function(e){
+    var btn = e.target.closest('button[data-act]'); if(!btn) return;
+    var id = btn.dataset.id; var prova = provas.filter(function(p){return p.id===id;})[0]; if(!prova) return;
+    if(btn.dataset.act==='start') startProva(prova);
+    else if(btn.dataset.act==='export') exportProva(prova);
+    else if(btn.dataset.act==='del'){
+      if(provas.length<=1){ alert('Mantenha ao menos uma prova cadastrada.'); return; }
+      if(confirm('Remover "'+prova.titulo+'"?')){ provas = provas.filter(function(p){return p.id!==id;}); saveProvas(); renderMenu(); }
+    }
+  });
+
+  function startProva(prova){
+    state = {provaId:prova.id, indice:0, respostas:new Array(prova.questoes.length).fill(null)};
+    showScreen('quiz'); renderQuestion();
+  }
+  function currentProva(){ return provas.filter(function(p){return p.id===state.provaId;})[0]; }
+
+  function renderQuestion(){
+    var prova = currentProva(); var q = prova.questoes[state.indice];
+    $('#quiz-titulo').textContent = prova.titulo;
+    $('#quiz-progresso-label').textContent = 'Questão '+(state.indice+1)+' de '+prova.questoes.length;
+    $('#quiz-progresso-fill').style.width = (state.indice/prova.questoes.length*100)+'%';
+    $('#quiz-enunciado').textContent = q.enunciado;
+    var opts = $('#quiz-opcoes'); opts.innerHTML='';
+    q.alternativas.forEach(function(texto, i){
+      var b = el('button','opt');
+      b.innerHTML = '<span class="letter">'+LETTERS[i]+')</span> <span>'+escapeHtml(texto)+'</span>';
+      if(state.respostas[state.indice]===i) b.classList.add('selected');
+      b.addEventListener('click', function(){ state.respostas[state.indice]=i; renderQuestion(); });
+      opts.appendChild(b);
+    });
+    $('#btn-anterior').disabled = state.indice===0;
+    var respondida = state.respostas[state.indice]!==null;
+    var ultima = state.indice===prova.questoes.length-1;
+    $('#btn-proxima').hidden = ultima;
+    $('#btn-proxima').disabled = !respondida;
+    $('#btn-finalizar').hidden = !ultima;
+    $('#btn-finalizar').disabled = !respondida;
+  }
+  $('#btn-anterior').addEventListener('click', function(){ if(state.indice>0){ state.indice--; renderQuestion(); } });
+  $('#btn-proxima').addEventListener('click', function(){ var prova=currentProva(); if(state.indice<prova.questoes.length-1){ state.indice++; renderQuestion(); } });
+  $('#btn-finalizar').addEventListener('click', finalizarProva);
+  $('#btn-sair-quiz').addEventListener('click', function(){ if(confirm('Sair sem finalizar? O progresso desta tentativa será perdido.')) renderMenu(); });
+
+  function finalizarProva(){
+    var prova = currentProva(); var acertos=0;
+    var lista = $('#resultado-lista'); lista.innerHTML='';
+    prova.questoes.forEach(function(q,i){
+      var marcado = state.respostas[i];
+      var ok = marcado===q.correta; if(ok) acertos++;
+      var box = el('div','card resultado-item');
+      var optsHtml='';
+      q.alternativas.forEach(function(texto,li){
+        var cls='opt-mini';
+        if(li===q.correta) cls+=' correct'; else if(li===marcado) cls+=' wrong';
+        optsHtml += '<div class="'+cls+'"><span class="letter">'+LETTERS[li]+')</span> '+escapeHtml(texto)+'</div>';
+      });
+      box.innerHTML = '<div class="resultado-q">'+(i+1)+'. '+escapeHtml(q.enunciado)+'</div>'+optsHtml+
+        '<div class="resultado-tag '+(ok?'tag-ok':'tag-bad')+'">'+(ok? '✓ Correta' : '✗ Marcada: '+(marcado!==null?LETTERS[marcado]:'—')+' · Correta: '+LETTERS[q.correta])+'</div>';
+      lista.appendChild(box);
+    });
+    $('#resultado-score').textContent = acertos+' / '+prova.questoes.length;
+    $('#resultado-pct').textContent = Math.round(acertos/prova.questoes.length*100)+'%';
+    // persist score history
+    try{
+      var scores = JSON.parse(localStorage.getItem('examScores_v1')||'[]');
+      var usuario = localStorage.getItem('examUsuarioNome_v1') || 'Anônimo';
+      scores.push({usuario:usuario, provaId:prova.id, titulo:prova.titulo, total:prova.questoes.length, acertos:acertos, pct:Math.round(acertos/prova.questoes.length*100), ts:Date.now()});
+      localStorage.setItem('examScores_v1', JSON.stringify(scores));
+    }catch(e){}
+    showScreen('result');
+  }
+  $('#btn-refazer').addEventListener('click', function(){ startProva(currentProva()); });
+  $('#btn-voltar-menu').addEventListener('click', renderMenu);
+
+  function parseProvaTxt(texto){
+    var linhas = texto.split(/\r?\n/);
+    var i=0; var titulo='Prova importada';
+    while(i<linhas.length && linhas[i].trim()==='') i++;
+    var mt = linhas[i] && linhas[i].match(/^(?:PROVA|T[ÍI]TULO)\s*:\s*(.+)$/i);
+    if(mt){ titulo = mt[1].trim(); i++; }
+    var questoes=[];
+    while(i<linhas.length){
+      while(i<linhas.length && linhas[i].trim()==='') i++;
+      if(i>=linhas.length) break;
+      var mq = linhas[i].match(/^\s*\d+[).]\s*(.+)$/);
+      if(!mq){ i++; continue; }
+      var enunciado = mq[1].trim(); i++;
+      var alternativas=[];
+      while(alternativas.length<5 && i<linhas.length){
+        var ma = linhas[i].match(/^\s*([A-Ea-e])[).]\s*(.+)$/);
+        if(ma){ alternativas.push(ma[2].trim()); i++; } else break;
+      }
+      while(i<linhas.length && linhas[i].trim()==='') i++;
+      var mg = i<linhas.length && linhas[i].match(/^\s*(?:GABARITO|RESPOSTA)\s*:?\s*([A-Ea-e])/i);
+      var correta=0;
+      if(mg){ correta = 'ABCDE'.indexOf(mg[1].toUpperCase()); i++; }
+      if(alternativas.length===5) questoes.push({enunciado:enunciado, alternativas:alternativas, correta:correta});
+    }
+    if(!questoes.length) throw new Error('Nenhuma questão reconhecida. Confira o formato em "Ver formato TXT".');
+    return {id:'p'+Date.now()+Math.floor(Math.random()*999), titulo:titulo, questoes:questoes};
+  }
+  function buildTxt(p){
+    var out = 'PROVA: '+p.titulo+'\n\n';
+    p.questoes.forEach(function(q,i){
+      out += (i+1)+') '+q.enunciado+'\n';
+      q.alternativas.forEach(function(a,li){ out += LETTERS[li]+') '+a+'\n'; });
+      out += 'GABARITO: '+LETTERS[q.correta]+'\n\n';
+    });
+    return out;
+  }
+  function sanitizeFilename(s){ return s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9]+/g,'_').slice(0,60); }
+  function salvarArquivo(filename, texto){
+    if(downloadsCap){
+      downloadsCap.save({filename:filename, data:texto}).catch(function(err){
+        if(!err || err.code!=='declined') mostrarTextoModal(texto, filename);
+      });
+    } else { mostrarTextoModal(texto, filename); }
+  }
+  function exportProva(p){ salvarArquivo(sanitizeFilename(p.titulo)+'.txt', buildTxt(p)); }
+  function mostrarTextoModal(texto, filename){
+    $('#fallback-filename').textContent = filename;
+    $('#fallback-textarea').value = texto;
+    $('#modal-fallback').hidden = false;
+  }
+  $('#fechar-fallback').addEventListener('click', function(){ $('#modal-fallback').hidden=true; });
+  $('#copiar-fallback').addEventListener('click', function(){
+    var ta = $('#fallback-textarea'); ta.select();
+    try{ document.execCommand('copy'); }catch(e){}
+  });
+
+  $('#btn-add-prova').addEventListener('click', function(){
+    $('#modal-add').hidden=false; $('#add-textarea').value=''; $('#add-file').value=''; $('#add-erro').hidden=true;
+  });
+  $('#fechar-add').addEventListener('click', function(){ $('#modal-add').hidden=true; });
+  $('#add-file').addEventListener('change', function(e){
+    var f = e.target.files[0]; if(!f) return;
+    var reader = new FileReader();
+    reader.onload = function(){ $('#add-textarea').value = reader.result; };
+    reader.readAsText(f, 'utf-8');
+  });
+  $('#btn-processar-add').addEventListener('click', function(){
+    try{
+      var nova = parseProvaTxt($('#add-textarea').value);
+      provas.push(nova); saveProvas(); $('#modal-add').hidden=true; renderMenu();
+    }catch(err){ $('#add-erro').hidden=false; $('#add-erro').textContent = err.message; }
+  });
+  $('#btn-formato').addEventListener('click', function(){ $('#modal-help').hidden=false; });
+  $('#fechar-help').addEventListener('click', function(){ $('#modal-help').hidden=true; });
+  $('#btn-baixar-modelo').addEventListener('click', function(){
+    var modelo = 'PROVA: Minha Prova\n\n1) Pergunta de exemplo com o enunciado completo?\nA) primeira alternativa\nB) segunda alternativa\nC) terceira alternativa\nD) quarta alternativa\nE) quinta alternativa\nGABARITO: C\n\n2) Segunda pergunta de exemplo?\nA) alt A\nB) alt B\nC) alt C\nD) alt D\nE) alt E\nGABARITO: A\n';
+    salvarArquivo('modelo_prova.txt', modelo);
+  });
+
+  renderMenu();
+})();
+</script>
+</body>
+</html>

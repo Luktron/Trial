@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 8
+
+1) Qual é a finalidade de um sistema operacional?
+A) Gerenciar hardware e software
+B) Somente navegar na internet
+C) Apenas editar imagens
+D) Produzir energia
+E) Substituir a placa-mãe
+GABARITO: A
+
+2) Qual componente é responsável pelo armazenamento permanente?
+A) SSD
+B) RAM
+C) Cache
+D) Registrador
+E) CPU
+GABARITO: A
+
+3) Qual periférico é de entrada?
+A) Teclado
+B) Monitor
+C) Impressora
+D) Projetor
+E) Alto-falante
+GABARITO: A
+
+4) Qual periférico é de saída?
+A) Monitor
+B) Teclado
+C) Mouse
+D) Scanner
+E) Microfone
+GABARITO: A
+
+5) Qual tecnologia permite comunicação sem fio local?
+A) Wi-Fi
+B) SATA
+C) HDMI
+D) VGA
+E) PCI
+GABARITO: A
+
+6) Qual protocolo fornece configuração automática de rede?
+A) DHCP
+B) SMTP
+C) FTP
+D) IMAP
+E) HTTP
+GABARITO: A
+
+7) Qual protocolo resolve nomes de domínio?
+A) DNS
+B) DHCP
+C) FTP
+D) SMTP
+E) SSH
+GABARITO: A
+
+8) Qual equipamento conecta redes diferentes?
+A) Roteador
+B) Switch
+C) Hub USB
+D) Scanner
+E) Monitor
+GABARITO: A
+
+9) Qual equipamento conecta vários dispositivos de uma LAN?
+A) Switch
+B) Roteador apenas
+C) Scanner
+D) Projetor
+E) Nobreak
+GABARITO: A
+
+10) Qual protocolo protege a navegação web com criptografia?
+A) HTTPS
+B) HTTP
+C) FTP
+D) Telnet
+E) SMTP
+GABARITO: A
+
+11) Qual ferramenta é usada para criar documentos de texto?
+A) Word
+B) Excel
+C) PowerPoint
+D) Paint
+E) Calculadora
+GABARITO: A
+
+12) Qual ferramenta é utilizada para apresentações?
+A) PowerPoint
+B) Word
+C) Excel
+D) Notepad
+E) Explorer
+GABARITO: A
+
+13) Qual recurso de planilha permite ordenar registros?
+A) Classificação
+B) Impressão
+C) Margem
+D) Cabeçalho
+E) Zoom
+GABARITO: A
+
+14) Qual função retorna o maior número?
+A) =MÁXIMO(A1:A10)
+B) =MELHOR(A1:A10)
+C) =ALTO(A1:A10)
+D) =TOPO(A1:A10)
+E) =MAIORVALOR(A1:A10)
+GABARITO: A
+
+15) Qual ataque tenta enganar o usuário para obter dados?
+A) Phishing
+B) Backup
+C) Firewall
+D) Compressão
+E) Fragmentação
+GABARITO: A
+
+16) Qual software ajuda a detectar malware?
+A) Antivírus
+B) Editor de texto
+C) Calculadora
+D) Navegador
+E) Compactador
+GABARITO: A
+
+17) Qual medida ajuda a proteger contas?
+A) Autenticação multifator
+B) Senha compartilhada
+C) Senha simples
+D) Bloqueio desativado
+E) Conta pública
+GABARITO: A
+
+18) Um computador custa R$ 600,00 e recebe desconto de 10%. O valor final é:
+A) R$ 540,00
+B) R$ 550,00
+C) R$ 560,00
+D) R$ 570,00
+E) R$ 580,00
+GABARITO: A
+
+19) Se 25% de 400 chamados são resolvidos remotamente, quantos são?
+A) 100
+B) 125
+C) 150
+D) 175
+E) 200
+GABARITO: A
+
+20) Ao documentar um atendimento técnico, deve-se:
+A) Registrar problema, diagnóstico e solução
+B) Apagar os detalhes
+C) Registrar apenas o nome
+D) Omitir a solução
+E) Não registrar nada
+GABARITO: A

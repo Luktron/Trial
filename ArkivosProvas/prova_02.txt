@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 2
+
+1) Qual memória armazena temporariamente dados utilizados pelos programas em execução?
+A) RAM
+B) ROM
+C) SSD
+D) DVD
+E) Pendrive
+GABARITO: A
+
+2) Qual tecnologia é usada para conexão sem fio em redes locais?
+A) SATA
+B) HDMI
+C) Wi-Fi
+D) VGA
+E) USB
+GABARITO: C
+
+3) Qual porta USB é utilizada para conectar diversos periféricos?
+A) USB
+B) RJ-11
+C) HDMI
+D) VGA
+E) PS/2
+GABARITO: A
+
+4) Qual componente fornece energia elétrica aos componentes internos do computador?
+A) SSD
+B) Fonte de alimentação
+C) RAM
+D) CPU
+E) Cooler
+GABARITO: B
+
+5) O que significa SSD?
+A) Secure System Disk
+B) Solid State Drive
+C) System Storage Data
+D) Serial System Device
+E) Software Storage Drive
+GABARITO: B
+
+6) Qual é uma vantagem comum do SSD em relação ao HD mecânico?
+A) Não armazena dados
+B) Maior velocidade de acesso
+C) Necessita de fita magnética
+D) Funciona somente sem energia
+E) Não pode ser usado em computadores
+GABARITO: B
+
+7) Qual aplicativo é voltado para navegação na internet?
+A) Navegador web
+B) Editor de planilhas
+C) Editor de imagens
+D) Calculadora
+E) Gerenciador de impressão
+GABARITO: A
+
+8) Qual protocolo é utilizado para envio de e-mails?
+A) SMTP
+B) DHCP
+C) DNS
+D) FTP
+E) SSH
+GABARITO: A
+
+9) Qual protocolo permite transferência de arquivos entre computadores?
+A) FTP
+B) SMTP
+C) DNS
+D) HTTPS
+E) DHCP
+GABARITO: A
+
+10) O que representa o endereço MAC de um dispositivo de rede?
+A) Uma senha de usuário
+B) Um identificador da interface de rede
+C) Um endereço de site
+D) Um tipo de antivírus
+E) Um arquivo de configuração
+GABARITO: B
+
+11) Qual equipamento normalmente conecta vários dispositivos dentro de uma mesma rede local?
+A) Switch
+B) Scanner
+C) Impressora
+D) Monitor
+E) Nobreak
+GABARITO: A
+
+12) Qual equipamento pode fornecer energia temporária em caso de queda de energia?
+A) Switch
+B) Nobreak
+C) Teclado
+D) Scanner
+E) Webcam
+GABARITO: B
+
+13) Qual é a finalidade de uma atualização de segurança?
+A) Corrigir vulnerabilidades e problemas
+B) Apagar todos os documentos
+C) Reduzir a memória RAM
+D) Desativar a rede
+E) Remover o sistema operacional
+GABARITO: A
+
+14) O que é malware?
+A) Programa destinado exclusivamente à edição de texto
+B) Software malicioso
+C) Sistema de arquivos
+D) Tipo de cabo
+E) Unidade de armazenamento
+GABARITO: B
+
+15) Qual exemplo representa autenticação de dois fatores?
+A) Duas senhas iguais
+B) Senha e código temporário enviado ao usuário
+C) Nome e sobrenome
+D) Apenas pergunta secreta
+E) Apenas usuário
+GABARITO: B
+
+16) Um arquivo de 3 GB equivale a quantos MB, considerando 1 GB = 1024 MB?
+A) 1024 MB
+B) 2048 MB
+C) 3072 MB
+D) 4096 MB
+E) 5120 MB
+GABARITO: C
+
+17) Uma impressora custa R$ 500,00 e recebe desconto de 10%. Qual o preço final?
+A) R$ 450,00
+B) R$ 460,00
+C) R$ 470,00
+D) R$ 480,00
+E) R$ 490,00
+GABARITO: A
+
+18) Qual palavra está grafada corretamente?
+A) Excessão
+B) Exceção
+C) Eseção
+D) Excesssão
+E) Exessão
+GABARITO: B
+
+19) Na frase 'O servidor respondeu rapidamente', a palavra 'rapidamente' indica:
+A) Lugar
+B) Tempo
+C) Modo
+D) Negação
+E) Dúvida
+GABARITO: C
+
+20) Ao identificar um computador infectado, uma atitude adequada é:
+A) Conectar vários pendrives
+B) Ignorar o alerta
+C) Isolar o equipamento da rede e comunicar o responsável
+D) Compartilhar os arquivos infectados
+E) Desativar todas as proteções
+GABARITO: C

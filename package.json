@@ -1,0 +1,11 @@
+{
+  "name": "exam-protocol-server",
+  "version": "1.0.0",
+  "description": "Servidor local para EXAM://PROTOCOL",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "start:3001": "PORT=3001 node server.js"
+  },
+  "dependencies": {}
+}

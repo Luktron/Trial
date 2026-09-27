@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 4
+
+1) Qual unidade representa capacidade de armazenamento?
+A) GB
+B) GHz
+C) Volt
+D) Ampere
+E) Hertz
+GABARITO: A
+
+2) Qual unidade representa frequência de operação?
+A) GB
+B) GHz
+C) MB
+D) TB
+E) DPI
+GABARITO: B
+
+3) Qual dispositivo permite entrada de texto?
+A) Teclado
+B) Monitor
+C) Projetor
+D) Alto-falante
+E) Impressora
+GABARITO: A
+
+4) Qual dispositivo apresenta informações visualmente ao usuário?
+A) Monitor
+B) Microfone
+C) Teclado
+D) Scanner
+E) Mouse
+GABARITO: A
+
+5) Qual dispositivo permite apontar e selecionar objetos na tela?
+A) Mouse
+B) Scanner
+C) Impressora
+D) Modem
+E) Roteador
+GABARITO: A
+
+6) Qual é a função de um sistema operacional?
+A) Gerenciar recursos do computador e fornecer serviços aos programas
+B) Somente imprimir documentos
+C) Apenas reproduzir músicas
+D) Aumentar a voltagem
+E) Substituir o hardware
+GABARITO: A
+
+7) Qual extensão normalmente representa um arquivo PDF?
+A) .pdf
+B) .exe
+C) .sys
+D) .bat
+E) .ini
+GABARITO: A
+
+8) Qual extensão normalmente representa uma planilha do Excel?
+A) .xlsx
+B) .docx
+C) .pptx
+D) .jpg
+E) .html
+GABARITO: A
+
+9) Qual extensão normalmente representa uma apresentação do PowerPoint?
+A) .pptx
+B) .xlsx
+C) .docx
+D) .zip
+E) .png
+GABARITO: A
+
+10) Qual recurso do navegador armazena informações temporárias para agilizar acessos?
+A) Cache
+B) CPU
+C) BIOS
+D) RAM física
+E) Fonte
+GABARITO: A
+
+11) O que é download?
+A) Transferência de dados de um servidor para o dispositivo
+B) Exclusão de arquivo
+C) Impressão de documento
+D) Criação de senha
+E) Formatação de disco
+GABARITO: A
+
+12) O que é upload?
+A) Envio de dados do dispositivo para um servidor
+B) Instalação de memória
+C) Exclusão de dados
+D) Desligamento do computador
+E) Compactação obrigatória
+GABARITO: A
+
+13) Qual protocolo é utilizado para acesso seguro remoto a sistemas?
+A) SSH
+B) HTTP
+C) SMTP
+D) POP3
+E) DHCP
+GABARITO: A
+
+14) Qual protocolo é associado ao acesso seguro a páginas web?
+A) HTTPS
+B) FTP
+C) Telnet
+D) SMTP
+E) SNMP
+GABARITO: A
+
+15) Qual é o objetivo de um backup?
+A) Manter uma cópia dos dados para recuperação
+B) Aumentar o brilho do monitor
+C) Melhorar o teclado
+D) Trocar o processador
+E) Alterar o endereço IP
+GABARITO: A
+
+16) O que é computação em nuvem?
+A) Uso de recursos e serviços computacionais disponibilizados pela internet
+B) Uso exclusivo de computadores sem rede
+C) Armazenamento somente em CD
+D) Um tipo de monitor
+E) Um cabo de rede
+GABARITO: A
+
+17) Um arquivo de 4096 MB corresponde a quantos GB, considerando 1024 MB por GB?
+A) 2 GB
+B) 3 GB
+C) 4 GB
+D) 5 GB
+E) 6 GB
+GABARITO: C
+
+18) Se um técnico atende 5 computadores por hora, quantos atende em 4 horas?
+A) 10
+B) 15
+C) 20
+D) 25
+E) 30
+GABARITO: C
+
+19) Qual palavra está correta?
+A) Manutenção
+B) Manuntenção
+C) Manutensão
+D) Manutençao
+E) Manutenssão
+GABARITO: A
+
+20) Ao receber um e-mail com anexo inesperado, recomenda-se:
+A) Abrir imediatamente
+B) Encaminhar para todos
+C) Verificar a origem antes de abrir
+D) Desativar o antivírus
+E) Salvar em todos os computadores
+GABARITO: C

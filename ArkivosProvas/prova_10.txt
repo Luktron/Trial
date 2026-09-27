@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 10
+
+1) Qual sistema operacional é de código aberto e baseado em Linux?
+A) Ubuntu
+B) Windows
+C) iOS
+D) macOS
+E) DOS
+GABARITO: A
+
+2) Qual sistema operacional é desenvolvido pela Microsoft para computadores pessoais?
+A) Windows
+B) Ubuntu
+C) Android
+D) Debian
+E) Fedora
+GABARITO: A
+
+3) Qual dispositivo armazena dados mesmo sem energia?
+A) SSD
+B) RAM
+C) Cache
+D) Registrador
+E) Memória virtual
+GABARITO: A
+
+4) Qual dispositivo é usado para imprimir documentos?
+A) Impressora
+B) Scanner
+C) Webcam
+D) Microfone
+E) Roteador
+GABARITO: A
+
+5) Qual dispositivo é usado para capturar imagens ou documentos físicos?
+A) Scanner
+B) Monitor
+C) Switch
+D) Roteador
+E) Alto-falante
+GABARITO: A
+
+6) Qual atalho salva um arquivo em muitos aplicativos?
+A) Ctrl+S
+B) Ctrl+C
+C) Ctrl+X
+D) Ctrl+Z
+E) Ctrl+P
+GABARITO: A
+
+7) Qual atalho copia texto selecionado?
+A) Ctrl+C
+B) Ctrl+V
+C) Ctrl+X
+D) Ctrl+A
+E) Ctrl+N
+GABARITO: A
+
+8) Qual atalho desfaz a última ação?
+A) Ctrl+Z
+B) Ctrl+Y
+C) Ctrl+P
+D) Ctrl+S
+E) Ctrl+F
+GABARITO: A
+
+9) Qual programa é usado para planilhas?
+A) Excel
+B) Word
+C) PowerPoint
+D) Paint
+E) Notepad
+GABARITO: A
+
+10) Qual fórmula calcula a soma de C1 a C5?
+A) =SOMA(C1:C5)
+B) =TOTAL(C1-C5)
+C) =ADD(C1:C5)
+D) =SOMAR(C1-C5)
+E) =SUMA(C1-C5)
+GABARITO: A
+
+11) Qual função calcula a média?
+A) =MÉDIA(A1:A5)
+B) =SOMA(A1:A5)
+C) =MÁXIMO(A1:A5)
+D) =CONT.SE(A1:A5)
+E) =TEXTO(A1:A5)
+GABARITO: A
+
+12) Qual recurso exibe somente linhas que atendem a critérios?
+A) Filtro
+B) Margem
+C) Zoom
+D) Cabeçalho
+E) Rodapé
+GABARITO: A
+
+13) Qual prática de segurança é recomendada?
+A) Atualizar sistemas regularmente
+B) Desativar atualizações
+C) Compartilhar senhas
+D) Usar programas desconhecidos
+E) Ignorar alertas
+GABARITO: A
+
+14) O que é uma vulnerabilidade?
+A) Uma fraqueza que pode ser explorada
+B) Um tipo de backup
+C) Uma unidade de armazenamento
+D) Um protocolo de impressão
+E) Um cabo
+GABARITO: A
+
+15) O que é autenticação?
+A) Processo de verificar a identidade de um usuário
+B) Cópia de arquivos
+C) Formatação de disco
+D) Criação de planilha
+E) Instalação de impressora
+GABARITO: A
+
+16) O que é autorização?
+A) Definição do que um usuário autenticado pode acessar ou fazer
+B) Verificação do hardware
+C) Limpeza de disco
+D) Compactação de arquivos
+E) Atualização do navegador
+GABARITO: A
+
+17) Uma empresa tem 80 computadores e 20 estão indisponíveis. Quantos estão disponíveis?
+A) 60
+B) 65
+C) 70
+D) 75
+E) 80
+GABARITO: A
+
+18) Um serviço custa R$ 250,00 e recebe desconto de 20%. Qual o preço final?
+A) R$ 200,00
+B) R$ 210,00
+C) R$ 215,00
+D) R$ 220,00
+E) R$ 230,00
+GABARITO: A
+
+19) Qual palavra está correta?
+A) Necessário
+B) Nescessário
+C) Necessareo
+D) Neceçário
+E) Necessareo
+GABARITO: A
+
+20) Quando um usuário relata um problema, o técnico deve:
+A) Ouvir, registrar e buscar compreender o problema antes de agir
+B) Culpar o usuário
+C) Formatar o computador imediatamente
+D) Ignorar detalhes
+E) Encerrar o chamado sem análise
+GABARITO: A

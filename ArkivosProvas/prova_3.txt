@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 3
+
+1) Qual atalho de teclado permite alternar entre janelas abertas no Windows?
+A) Alt+Tab
+B) Ctrl+Tab
+C) Shift+Tab
+D) Win+D
+E) Ctrl+Alt+Del
+GABARITO: A
+
+2) O que caracteriza um software de código aberto (open source)?
+A) É sempre gratuito e não pode ser modificado
+B) Seu código-fonte é disponibilizado publicamente, permitindo estudo, modificação e distribuição
+C) Só pode ser executado em sistemas Linux
+D) É desenvolvido exclusivamente por uma única empresa
+E) Não possui licença de uso
+GABARITO: B
+
+3) A extensão de arquivo ".pdf" é comumente associada a:
+A) Planilhas eletrônicas
+B) Documentos portáveis com formatação preservada
+C) Apresentações de slides editáveis
+D) Arquivos de áudio
+E) Bancos de dados relacionais
+GABARITO: B
+
+4) Qual função do Excel é utilizada para buscar um valor em uma tabela e retornar uma informação correspondente em outra coluna?
+A) =PROCV
+B) =SOMASE
+C) =CONCATENAR
+D) =ARREDONDAR
+E) =MÉDIA
+GABARITO: A
+
+5) Qual atalho no Excel é utilizado para abrir a caixa de diálogo "Formatar Células"?
+A) Ctrl+1
+B) Ctrl+F
+C) Ctrl+B
+D) Ctrl+F2
+E) Ctrl+Shift+F
+GABARITO: A
+
+6) A função =MÉDIA(A1:A5) no Excel calcula:
+A) A soma dos valores de A1 a A5
+B) O valor máximo entre A1 e A5
+C) A média aritmética dos valores de A1 a A5
+D) O valor mínimo entre A1 e A5
+E) A quantidade de células preenchidas entre A1 e A5
+GABARITO: C
+
+7) O que é engenharia social no contexto de segurança da informação?
+A) Um método de programação orientado a objetos
+B) Um conjunto de técnicas de manipulação psicológica para obter informações sigilosas de pessoas
+C) Um protocolo de rede corporativa
+D) Um tipo de licença de software
+E) Uma metodologia de gestão de projetos
+GABARITO: B
+
+8) Qual das opções abaixo é considerada uma senha forte?
+A) 123456
+B) senha123
+C) Ab7$kL9!mQ2
+D) nomedousuario
+E) qwerty
+GABARITO: C
+
+9) O backup do tipo "incremental" se caracteriza por:
+A) Copiar todos os dados do sistema a cada execução
+B) Copiar apenas os dados alterados desde o último backup (completo ou incremental)
+C) Não realizar nenhuma cópia de segurança
+D) Ser executado apenas uma vez por ano
+E) Armazenar dados exclusivamente em fitas magnéticas
+GABARITO: B
+
+10) Qual unidade é utilizada para medir a velocidade de clock de um processador?
+A) Bytes
+B) Hertz (Hz)
+C) Volts
+D) Watts
+E) Bits por segundo apenas
+GABARITO: B
+
+11) Qual dispositivo é responsável por gerar a imagem exibida no monitor, sendo essencial para tarefas gráficas pesadas?
+A) Placa de som
+B) Placa de rede
+C) Placa de vídeo (GPU)
+D) Fonte de alimentação
+E) Placa-mãe apenas
+GABARITO: C
+
+12) O que é overclock?
+A) Reduzir a temperatura do processador
+B) Aumentar a frequência de operação de um componente acima do padrão de fábrica
+C) Desligar componentes não utilizados
+D) Formatar o disco rígido
+E) Instalar drivers atualizados
+GABARITO: B
+
+13) O que é um endereço IP privado, comumente usado em redes locais?
+A) Um endereço público acessível diretamente pela internet
+B) Um endereço reservado para uso interno em redes locais, como os da faixa 192.168.x.x
+C) Um endereço exclusivo de servidores DNS
+D) Um endereço utilizado apenas em redes Wi-Fi públicas
+E) Um endereço de e-mail corporativo
+GABARITO: B
+
+14) Qual protocolo é utilizado para o envio de e-mails?
+A) FTP
+B) HTTP
+C) SMTP
+D) SSH
+E) DHCP
+GABARITO: C
+
+15) O que faz o protocolo DHCP em uma rede?
+A) Criptografa os dados transmitidos na rede
+B) Atribui automaticamente endereços IP aos dispositivos conectados
+C) Traduz nomes de domínio em endereços IP
+D) Gerencia o tráfego de e-mails
+E) Realiza backup de arquivos na rede
+GABARITO: B
+
+16) Um técnico precisa distribuir 144 licenças de software igualmente entre 12 departamentos. Quantas licenças cada departamento receberá?
+A) 10
+B) 11
+C) 12
+D) 13
+E) 14
+GABARITO: C
+
+17) O preço de um equipamento é R$ 800,00. Após um aumento de 15%, qual será o novo preço?
+A) R$ 815,00
+B) R$ 850,00
+C) R$ 880,00
+D) R$ 920,00
+E) R$ 900,00
+GABARITO: D
+
+18) Uma equipe de suporte atendeu 60 chamados em 5 horas. Mantendo esse ritmo, quantos chamados serão atendidos em 8 horas?
+A) 84
+B) 90
+C) 96
+D) 100
+E) 108
+GABARITO: C
+
+19) Assinale a alternativa em que a concordância verbal está correta:
+A) Fazem dois anos que trabalho nesta empresa.
+B) Faz dois anos que trabalho nesta empresa.
+C) Fazem dois anos que trabalhamos nesta empresa juntos.
+D) Houveram muitos problemas no sistema ontem.
+E) Deve haverem novas atualizações em breve.
+GABARITO: B
+
+20) No trecho "Embora o sistema apresentasse falhas, os técnicos conseguiram concluir a manutenção no prazo", a relação de sentido estabelecida pela conjunção "embora" é de:
+A) Causa
+B) Concessão
+C) Condição
+D) Conclusão
+E) Adição
+GABARITO: B

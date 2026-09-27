@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 5
+
+1) Qual componente é usado para armazenar o firmware básico de um computador?
+A) ROM/Flash
+B) RAM
+C) Cache
+D) Mouse
+E) GPU
+GABARITO: A
+
+2) Qual componente é responsável pelo processamento gráfico?
+A) GPU
+B) Fonte
+C) SSD
+D) Teclado
+E) Cooler
+GABARITO: A
+
+3) Qual periférico captura som?
+A) Microfone
+B) Monitor
+C) Impressora
+D) Projetor
+E) Scanner
+GABARITO: A
+
+4) Qual periférico reproduz áudio?
+A) Alto-falante
+B) Scanner
+C) Teclado
+D) Webcam
+E) Mouse
+GABARITO: A
+
+5) Qual conexão é comum para fones de ouvido analógicos?
+A) P2
+B) RJ-45
+C) HDMI
+D) VGA
+E) SATA
+GABARITO: A
+
+6) Qual tecnologia permite conectar dispositivos próximos sem fio, como fones de ouvido?
+A) Bluetooth
+B) SATA
+C) VGA
+D) PCI
+E) IDE
+GABARITO: A
+
+7) Qual é a função do endereço IP?
+A) Identificar logicamente um dispositivo em uma rede
+B) Armazenar arquivos
+C) Medir temperatura
+D) Controlar brilho
+E) Substituir o DNS
+GABARITO: A
+
+8) Qual serviço converte nomes como exemplo.com em endereços IP?
+A) DNS
+B) DHCP
+C) FTP
+D) SMTP
+E) SSH
+GABARITO: A
+
+9) Qual serviço pode distribuir IPs automaticamente?
+A) DHCP
+B) DNS
+C) HTTP
+D) SMTP
+E) IMAP
+GABARITO: A
+
+10) Qual equipamento encaminha pacotes entre redes?
+A) Roteador
+B) Monitor
+C) Teclado
+D) Scanner
+E) Hub USB
+GABARITO: A
+
+11) Qual equipamento conecta dispositivos em uma LAN?
+A) Switch
+B) Projetor
+C) Impressora
+D) Webcam
+E) Nobreak
+GABARITO: A
+
+12) Qual é uma característica de uma VPN?
+A) Pode criar um túnel protegido para comunicação pela rede
+B) Aumenta fisicamente a RAM
+C) Substitui o monitor
+D) Remove arquivos automaticamente
+E) Imprime documentos
+GABARITO: A
+
+13) O que é engenharia social?
+A) Manipulação de pessoas para obter informações ou realizar ações
+B) Montagem de computadores
+C) Criação de cabos
+D) Formatação de discos
+E) Programação de planilhas
+GABARITO: A
+
+14) Qual atitude ajuda a identificar phishing?
+A) Verificar remetente, endereço e contexto da mensagem
+B) Clicar em todos os links
+C) Informar senha por resposta
+D) Ignorar o domínio
+E) Desativar filtros
+GABARITO: A
+
+15) O que é spam?
+A) Mensagem eletrônica não solicitada, geralmente enviada em massa
+B) Sistema operacional
+C) Antivírus
+D) Protocolo de rede
+E) Tipo de memória
+GABARITO: A
+
+16) Qual é a finalidade de uma política de senhas?
+A) Definir regras para criação e uso seguro de senhas
+B) Aumentar a resolução da tela
+C) Instalar impressoras
+D) Configurar monitores
+E) Criar planilhas
+GABARITO: A
+
+17) Um computador custa R$ 1.000,00 e recebe desconto de 15%. O preço final é:
+A) R$ 750,00
+B) R$ 800,00
+C) R$ 850,00
+D) R$ 900,00
+E) R$ 950,00
+GABARITO: C
+
+18) Se 30% de 200 chamados são resolvidos no primeiro atendimento, quantos chamados são?
+A) 30
+B) 40
+C) 50
+D) 60
+E) 70
+GABARITO: D
+
+19) Na frase 'Os técnicos atualizaram os sistemas', o verbo é:
+A) Os
+B) técnicos
+C) atualizaram
+D) sistemas
+E) os
+GABARITO: C
+
+20) Ao concluir um chamado de suporte, é importante:
+A) Registrar a solução aplicada
+B) Apagar o histórico
+C) Ocultar informações relevantes
+D) Ignorar o usuário
+E) Remover os registros
+GABARITO: A

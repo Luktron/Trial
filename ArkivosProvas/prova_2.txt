@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 2
+
+1) Qual atalho de teclado é utilizado para copiar um item selecionado no Windows?
+A) Ctrl+V
+B) Ctrl+C
+C) Ctrl+X
+D) Ctrl+Z
+E) Ctrl+A
+GABARITO: B
+
+2) O que é a "área de transferência" (clipboard) em um sistema operacional?
+A) Uma pasta de armazenamento permanente de arquivos
+B) Um espaço de memória temporário usado para armazenar dados copiados ou recortados
+C) Um tipo de vírus de computador
+D) Um componente físico do hardware
+E) Um protocolo de comunicação de rede
+GABARITO: B
+
+3) Qual das opções é um exemplo de sistema de arquivos utilizado em discos formatados no Windows?
+A) EXT4
+B) HFS+
+C) NTFS
+D) APFS
+E) BTRFS
+GABARITO: C
+
+4) Qual função do Excel é utilizada para contar quantas células em um intervalo contêm números?
+A) =CONT.NÚM(A1:A10)
+B) =CONTAR(A1:A10)
+C) =NÚMEROS(A1:A10)
+D) =CONTA.SE(A1:A10)
+E) =SOMASE(A1:A10)
+GABARITO: A
+
+5) A função =SE(A1>10;"Alto";"Baixo") no Excel retorna "Alto" quando:
+A) O valor de A1 for menor que 10
+B) O valor de A1 for igual a 10
+C) O valor de A1 for maior que 10
+D) O valor de A1 for um texto
+E) A célula A1 estiver vazia
+GABARITO: C
+
+6) Para referenciar de forma absoluta a célula A1 em uma fórmula do Excel (mantendo fixa ao copiar), deve-se escrever:
+A) A1
+B) $A$1
+C) #A1#
+D) A1!
+E) [A1]
+GABARITO: B
+
+7) Um firewall tem como principal função:
+A) Aumentar a velocidade de processamento do computador
+B) Filtrar e controlar o tráfego de rede, permitindo ou bloqueando conexões
+C) Compactar arquivos para economizar espaço
+D) Corrigir erros de digitação em documentos
+E) Realizar backups automáticos na nuvem
+GABARITO: B
+
+8) O princípio de segurança da informação que garante que a informação não foi alterada de forma não autorizada é chamado de:
+A) Confidencialidade
+B) Disponibilidade
+C) Integridade
+D) Autenticidade
+E) Irretratabilidade
+GABARITO: C
+
+9) Qual das práticas abaixo é recomendada para proteger uma rede Wi-Fi doméstica ou corporativa?
+A) Deixar a rede aberta, sem senha, para facilitar o acesso
+B) Utilizar senha forte e criptografia WPA2/WPA3
+C) Compartilhar a senha da rede publicamente
+D) Desativar o firewall do roteador
+E) Utilizar sempre o protocolo WEP, mais moderno
+GABARITO: B
+
+10) Qual é a função da placa-mãe (motherboard) em um computador?
+A) Armazenar dados permanentemente
+B) Interligar e permitir a comunicação entre todos os componentes do computador
+C) Processar cálculos matemáticos complexos
+D) Resfriar o processador
+E) Fornecer energia elétrica direta à tomada
+GABARITO: B
+
+11) Qual das opções corresponde a uma memória volátil, ou seja, perde os dados quando o computador é desligado?
+A) HD (Disco Rígido)
+B) SSD
+C) Pen drive
+D) Memória RAM
+E) Cartão de memória SD
+GABARITO: D
+
+12) O dispositivo responsável por converter energia elétrica da tomada em energia adequada para os componentes internos do computador é:
+A) Placa-mãe
+B) Fonte de alimentação (PSU)
+C) Cooler
+D) Placa de vídeo
+E) HD
+GABARITO: B
+
+13) Qual é a função de um switch em uma rede local?
+A) Fornecer acesso à internet diretamente da operadora
+B) Interligar dispositivos dentro de uma mesma rede local, direcionando dados apenas ao destinatário correto
+C) Bloquear vírus e malwares
+D) Armazenar páginas da web visitadas
+E) Converter sinais analógicos em digitais
+GABARITO: B
+
+14) O que é um endereço MAC?
+A) Um endereço lógico atribuído dinamicamente pelo roteador
+B) Um identificador físico único de uma interface de rede
+C) Um protocolo de criptografia
+D) Um tipo de cabo de rede
+E) Um servidor de nomes de domínio
+GABARITO: B
+
+15) A sigla DNS significa:
+A) Digital Network Service
+B) Domain Name System
+C) Data Node Server
+D) Direct Network Session
+E) Domain Network Security
+GABARITO: B
+
+16) Um técnico realiza 8 atendimentos por dia. Em quantos dias ele completará 96 atendimentos, mantendo esse ritmo?
+A) 10
+B) 11
+C) 12
+D) 13
+E) 14
+GABARITO: C
+
+17) Uma empresa possui 45 computadores e deseja instalar antivírus em 60% deles primeiro. Quantos computadores receberão o antivírus nessa primeira etapa?
+A) 25
+B) 27
+C) 30
+D) 32
+E) 35
+GABARITO: B
+
+18) Se um arquivo de 3,6 GB é transferido a uma velocidade média de 60 MB/s (considerando 1 GB = 1000 MB), quanto tempo leva a transferência, aproximadamente?
+A) 30 segundos
+B) 60 segundos
+C) 90 segundos
+D) 45 segundos
+E) 120 segundos
+GABARITO: B
+
+19) Assinale a alternativa em que o uso da crase está correto:
+A) Fui à médico ontem.
+B) Entreguei o documento à diretora do setor.
+C) Ele chegou à pé cedo.
+D) Referiu-se à mim com cordialidade.
+E) Vou à responder o e-mail agora.
+GABARITO: B
+
+20) Em "O sistema, embora estivesse atualizado, apresentou uma falha crítica", a palavra "embora" introduz uma ideia de:
+A) Causa
+B) Concessão
+C) Consequência
+D) Condição
+E) Finalidade
+GABARITO: B

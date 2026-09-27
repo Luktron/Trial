@@ -1,0 +1,161 @@
+PROVA: Assistente de Tecnologia — Prova 7
+
+1) O que significa CPU?
+A) Central Processing Unit
+B) Computer Personal User
+C) Central Program Utility
+D) Control Processing User
+E) Computer Processing Unit
+GABARITO: A
+
+2) O que significa RAM?
+A) Random Access Memory
+B) Rapid Application Module
+C) Read Access Module
+D) Random Application Memory
+E) Read Allocation Memory
+GABARITO: A
+
+3) O que significa USB?
+A) Universal Serial Bus
+B) Universal System Base
+C) User Service Bus
+D) Unified Storage Block
+E) Universal Software Bridge
+GABARITO: A
+
+4) Qual dispositivo é usado para digitalizar uma folha?
+A) Scanner
+B) Monitor
+C) Roteador
+D) Switch
+E) Caixa de som
+GABARITO: A
+
+5) Qual recurso permite compartilhar uma impressora entre computadores em rede?
+A) Compartilhamento de impressora
+B) Desfragmentação
+C) Firewall físico
+D) Cache
+E) BIOS
+GABARITO: A
+
+6) Qual protocolo é usado para receber e-mails mantendo mensagens no servidor?
+A) IMAP
+B) SMTP
+C) FTP
+D) DHCP
+E) DNS
+GABARITO: A
+
+7) Qual protocolo é tradicionalmente utilizado para recebimento de e-mails?
+A) POP3
+B) HTTP
+C) SSH
+D) ARP
+E) DNS
+GABARITO: A
+
+8) Qual serviço permite acessar páginas da internet?
+A) HTTP/HTTPS
+B) SMTP
+C) DHCP
+D) POP3
+E) IMAP
+GABARITO: A
+
+9) Qual tipo de conexão utiliza cabo de rede?
+A) Ethernet
+B) Bluetooth
+C) Wi-Fi
+D) NFC
+E) Infravermelho
+GABARITO: A
+
+10) Qual equipamento geralmente fornece acesso à rede sem fio em uma residência?
+A) Roteador Wi-Fi
+B) Scanner
+C) Monitor
+D) Impressora
+E) Teclado
+GABARITO: A
+
+11) Qual é a função de um driver?
+A) Permitir que o sistema operacional se comunique com determinado hardware
+B) Armazenar documentos
+C) Criar vírus
+D) Aumentar a energia
+E) Substituir a CPU
+GABARITO: A
+
+12) Qual extensão normalmente representa um arquivo executável no Windows?
+A) .exe
+B) .txt
+C) .jpg
+D) .pdf
+E) .csv
+GABARITO: A
+
+13) Qual formato é frequentemente usado para dados tabulares simples separados por vírgulas?
+A) CSV
+B) JPG
+C) MP3
+D) EXE
+E) DLL
+GABARITO: A
+
+14) Qual é a função de uma pasta?
+A) Organizar arquivos
+B) Aumentar RAM
+C) Processar imagens
+D) Fornecer energia
+E) Conectar cabos
+GABARITO: A
+
+15) Qual prática é recomendada antes de remover um pendrive?
+A) Usar a opção de ejeção/remoção segura quando disponível
+B) Desligar o monitor
+C) Formatar o pendrive
+D) Abrir todos os arquivos
+E) Remover durante uma gravação
+GABARITO: A
+
+16) Qual ameaça pode registrar atividades e informações do usuário?
+A) Spyware
+B) Backup
+C) Firewall
+D) Driver
+E) Codec
+GABARITO: A
+
+17) Uma empresa tem 50 computadores e 10 estão em manutenção. Quantos estão disponíveis?
+A) 30
+B) 35
+C) 40
+D) 45
+E) 48
+GABARITO: C
+
+18) Se uma equipe resolve 8 chamados por dia, quantos resolve em 5 dias?
+A) 30
+B) 35
+C) 40
+D) 45
+E) 50
+GABARITO: C
+
+19) Na frase 'O atendimento foi realizado com rapidez', a palavra 'rapidez' é:
+A) Substantivo
+B) Verbo
+C) Adjetivo
+D) Pronome
+E) Preposição
+GABARITO: A
+
+20) Qual atitude demonstra profissionalismo no suporte técnico?
+A) Registrar procedimentos e comunicar o usuário sobre o andamento
+B) Ocultar informações
+C) Compartilhar dados confidenciais
+D) Ignorar chamados
+E) Fazer alterações sem registro
+GABARITO: A
